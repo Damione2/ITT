@@ -20,3 +20,6 @@ venv/
 # System files
 .DS_Store
 Thumbs.db
+
+# Allow tracking compiled papers
+!papers/**/*.pdf
