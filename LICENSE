@@ -1,0 +1,7 @@
+﻿# ITT Licensing Framework
+
+## Documentation & LaTeX Sources
+All theoretical manuscripts, papers, and text under `papers/` and `mathematics/` are licensed under the Creative Commons Attribution 4.0 International License (CC-BY-4.0).
+
+## Code & Numerical Algorithms
+All source code, scripts under `symbolic/`, `numerical/`, and validation workflows are licensed under the MIT License.

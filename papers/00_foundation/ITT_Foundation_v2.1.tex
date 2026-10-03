@@ -1,0 +1,301 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2cm, right=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage[colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+
+\title{\textbf{Information-Topological Theory: Minimal Foundational Formulation}}
+\author{\textbf{Damyan Damyanov}\\
+\small\textit{Independent Researcher, Hisarya, Bulgaria}\\
+\small\href{mailto:damione1@gmail.com}{damione1@gmail.com}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Abstract}
+We present the minimal foundational formulation of Information-Topological Theory (ITT). By deliberately isolating standard mathematical invariants from ITT-specific physical postulates, we establish the topological level selection $k_{\min} = 6$ purely through a $\mathbb{Z}_6$-equivariant descent condition on the configuration space $L(6,1) = S^3/\mathbb{Z}_6$, without relying on phenomenological Standard Model parameter fits.
+
+\newpage
+
+\section{Information-Topological Theory: Minimal Foundational Formulation}
+
+\subsection{Scope and Logical Status}
+The Information-Topological Theory (ITT) is formulated as a timeless canonical gauge theory on a three-dimensional configuration manifold. The fundamental configuration space is the gauge-orbit space
+\begin{equation}
+\mathcal C_{\rm ITT} = \mathcal A(S^3)/\mathcal G(S^3),
+\end{equation}
+where $\mathcal A(S^3)$ denotes the space of smooth $SU(2)$ connections on $S^3$ and $\mathcal G(S^3)$ the corresponding gauge transformation group.
+The theory deliberately separates standard mathematical results from ITT-specific postulates. In particular, the integer quantization of the Chern--Simons level is standard; the selection of the minimal level $k=6$ is an ITT equivariant-descent condition.
+
+\subsection{I. Timeless Canonical Configuration Space}
+The fundamental canonical variables are
+\begin{equation}
+A_i^a(x), \qquad E_a^i(x),
+\end{equation}
+with canonical Poisson brackets
+\begin{equation}
+\{A_i^a(x), E_b^j(y)\} = \delta_i^j \delta_b^a \delta^{(3)}(x-y),
+\end{equation}
+and
+\begin{equation}
+\{A_i^a, A_j^b\} = 0, \qquad \{E_a^i, E_b^j\} = 0.
+\end{equation}
+No external physical time is postulated at the fundamental level. A parameter $\tau$ may be introduced only as a bookkeeping parameter for curves in configuration space.
+
+\subsection{II. Chern--Simons Functional and ITT Constraint}
+Let
+\begin{equation}
+F = dA + A \wedge A
+\end{equation}
+and
+\begin{equation}
+B_a^i = \frac{1}{2}\epsilon^{ijk}F_{jk,a}.
+\end{equation}
+The $SU(2)$ generators are normalized by
+\begin{equation}
+T_a = \frac{\sigma_a}{2i}, \qquad \operatorname{tr}(T_a T_b) = -\frac{1}{2}\delta_{ab}.
+\end{equation}
+Define the Chern--Simons functional
+\begin{equation}
+S_{\rm CS}^{(0)}[A] = \int_{S^3} \operatorname{tr} \left( A \wedge dA + \frac{2}{3} A \wedge A \wedge A \right),
+\end{equation}
+with functional derivative
+\begin{equation}
+\frac{\delta S_{\rm CS}^{(0)}}{\delta A_i^a} = -B_a^i.
+\end{equation}
+The fundamental ITT constraint is
+\begin{equation}
+\boxed{
+\mathcal C_a^i \equiv E_a^i + \frac{k}{4\pi}B_a^i = E_a^i - \frac{k}{4\pi} \frac{\delta S_{\rm CS}^{(0)}}{\delta A_i^a} \approx 0.
+}
+\end{equation}
+The corresponding first-order timeless action is
+\begin{equation}
+S_{\rm ITT} = \int d\tau \int_{S^3} d^3x \left[ E_a^i \frac{dA_i^a}{d\tau} - N_i^a \mathcal C_a^i - A_0^a \mathcal G_a \right].
+\end{equation}
+
+\subsection{III. Constraint Algebra}
+Because $\mathcal C$ is a canonical momentum shift by an exact functional one-form,
+\begin{equation}
+\boxed{
+\{\mathcal C_a^i(x), \mathcal C_b^j(y)\} = 0
+}
+\end{equation}
+on the closed manifold $S^3$.
+The magnetic field satisfies the non-Abelian Bianchi identity
+\begin{equation}
+D_i B_a^i \equiv 0.
+\end{equation}
+Consequently,
+\begin{equation}
+D_i \mathcal C_a^i = D_i E_a^i \equiv \mathcal G_a.
+\end{equation}
+Thus the Gauss constraint is a differential consequence of the ITT constraint:
+\begin{equation}
+\boxed{
+\mathcal G_a = D_i \mathcal C_a^i.
+}
+\end{equation}
+At the classical level the constraint system is therefore first-class with a differential reducibility relation. At the quantum level the corresponding identity is understood with a fixed gauge-covariant operator ordering.
+
+\subsection{IV. Formal Exact Chern--Simons State}
+Canonical quantization is defined by
+\begin{equation}
+\widehat E_a^i = -i\frac{\delta}{\delta A_i^a}.
+\end{equation}
+The formal wave functional
+\begin{equation}
+\boxed{
+\Psi_k[A] = \mathcal N \exp\left[ i\frac{k}{4\pi} S_{\rm CS}^{(0)}[A] \right]
+}
+\end{equation}
+satisfies
+\begin{equation}
+\widehat{\mathcal C}_a^i \Psi_k[A] = 0
+\end{equation}
+because
+\begin{equation}
+\widehat E_a^i \Psi_k = -\frac{k}{4\pi} B_a^i \Psi_k.
+\end{equation}
+Consequently, for the positive quadratic constraint
+\begin{equation}
+\widehat{\mathcal H}_{\rm ITT} = \frac{1}{2} \widehat{\mathcal C}_a^i \widehat{\mathcal C}_i^a,
+\end{equation}
+with a specified regularization and operator ordering,
+\begin{equation}
+\boxed{
+\widehat{\mathcal H}_{\rm ITT}\Psi_k = 0.
+}
+\end{equation}
+This is a formal exact solution of the ITT canonical constraint. A complete Hilbert-space construction, regularization and self-adjoint realization are separate analytical problems.
+
+\subsection{V. Unit Topological Sector}
+For the $SU(2)$ BPST instanton on $D_R^4 \subset \mathbb R^4$, with scale $\rho$, define
+\begin{equation}
+c = \frac{R^2}{R^2+\rho^2}.
+\end{equation}
+With the above trace convention and orientation,
+\begin{equation}
+Q(R) = -\frac{1}{8\pi^2} \int_{D_R^4} \operatorname{tr}(F \wedge F) = 3c^2 - 2c^3 = \frac{R^4(R^2+3\rho^2)}{(R^2+\rho^2)^3}.
+\end{equation}
+For
+\begin{equation}
+A|_{S^3} = c \, g^{-1}dg,
+\end{equation}
+the corresponding Chern--Simons transgression gives the same quantity,
+\begin{equation}
+\frac{1}{2\pi} S_{\rm CS}(A|_{S^3}) = 3c^2 - 2c^3.
+\end{equation}
+In the asymptotic limit $R/\rho \rightarrow \infty$, one obtains the unit topological sector
+\begin{equation}
+\boxed{Q \rightarrow 1.}
+\end{equation}
+The corresponding APS cylinder representation yields the net spectral-flow index
+\begin{equation}
+\boxed{
+\operatorname{SF}(\mathcal D_{A_c}) = \operatorname{ind}\left(\mathcal D_{[0,1]\times S^3}^{\rm APS}\right) = 1,
+}
+\end{equation}
+with $c$ interpreted solely as a parameter of a family of three-dimensional gauge configurations and not as physical time.
+
+\subsection{VI. Standard Level Quantization}
+Under a large $SU(2)$ gauge transformation with winding number
+\begin{equation}
+w \in \pi_3(SU(2)) \cong \mathbb Z,
+\end{equation}
+the normalized Chern--Simons action shifts by an integer multiple of $2\pi$. Therefore gauge invariance of the quantum amplitude requires
+\begin{equation}
+\boxed{
+k \in \mathbb Z.
+}
+\end{equation}
+This is a standard Chern--Simons quantization condition and does not by itself select $k=6$.
+
+\subsection{VII. Lens-Space Topological Sector}
+The ITT quotient geometry is defined by the free diagonal action
+\begin{equation}
+(z_1,z_2) \mapsto \left( e^{2\pi i/6}z_1, e^{2\pi i/6}z_2 \right)
+\end{equation}
+on $S^3 \subset \mathbb C^2$. The resulting lens space is
+\begin{equation}
+\boxed{
+L(6,1) = S^3/\mathbb Z_6,
+}
+\end{equation}
+with $\pi_1(L(6,1)) \cong \mathbb Z_6$. Let $\rho_1 : \mathbb Z_6 \rightarrow SU(2)$ be the fundamental non-trivial flat representation,
+\begin{equation}
+\rho_1(\gamma) = \begin{pmatrix} e^{2\pi i/6} & 0 \\ 0 & e^{-2\pi i/6} \end{pmatrix}.
+\end{equation}
+With the fixed orientation and trace convention, its Chern--Simons invariant is
+\begin{equation}
+\boxed{
+\operatorname{cs}(\rho_1) = -\frac{1}{6} \pmod{\mathbb Z}.
+}
+\end{equation}
+The value follows from the rational intersection/linking form associated with the $(-6)$-framed surgery description of $L(6,1)$.
+
+\subsection{VIII. ITT Equivariant Descent Condition}
+The ITT quantum state is required to admit a $\mathbb Z_6$-equivariant lift to its prequantum line bundle. Denote the generator of $\mathbb Z_6$ by $\zeta$.
+
+The ITT equivariant structure is required to satisfy
+\begin{equation}
+\boxed{
+\chi_k(\zeta) = \exp\left( 2\pi i k \operatorname{cs}(\rho_1) \right).
+}
+\end{equation}
+Using $\operatorname{cs}(\rho_1) = -\frac{1}{6}$, the fiber character becomes
+\begin{equation}
+\boxed{
+\chi_k(\zeta) = e^{-2\pi i k/6}.
+}
+\end{equation}
+This equation is the defining ITT equivariant-lift condition. It is not asserted as a universal theorem of ordinary $SU(2)$ Chern--Simons theory.
+
+\subsection{IX. ITT Level Selection Rule}
+The ITT physical state is required to descend to the quotient configuration space with trivial stabilizer action. Therefore
+\begin{equation}
+\chi_k(\zeta) = 1.
+\end{equation}
+Hence
+\begin{equation}
+e^{-2\pi i k/6} = 1
+\end{equation}
+and therefore
+\begin{equation}
+\boxed{
+k \in 6\mathbb Z.
+}
+\end{equation}
+The minimal positive ITT level is
+\begin{equation}
+\boxed{
+k_{\min} = 6.
+}
+\end{equation}
+Thus the level selection is not derived from a phenomenological relation such as $3 \times 2$. It is an ITT-specific equivariant descent condition associated with the chosen $\mathbb Z_6$ quotient geometry.
+
+\subsection{X. Independent Soliton Sector}
+The number of particle generations is not used in the derivation of $k$. Instead, ITT treats
+\begin{equation}
+N_{\rm gen} = 3
+\end{equation}
+as an independent dynamical prediction of the soliton sector.
+The future objective is to construct an ITT energy functional
+\begin{equation}
+E_{\rm ITT}[n,A]
+\end{equation}
+whose stable topological sectors satisfy
+\begin{equation}
+Q_H = 1, 2, 3
+\end{equation}
+while higher-charge configurations are dynamically unstable or energetically decomposable.
+Until such a result is established, $N_{\rm gen} = 3$ remains an ITT postulate or target prediction and is not used in the proof of $k_{\min} = 6$.
+
+\subsection{XI. Foundational Logical Chain}
+The minimal ITT foundation is summarized by the sequence:
+\begin{equation}
+\begin{array}{c}
+\mathcal C_{\rm ITT} = \mathcal A(S^3)/\mathcal G(S^3) \\
+\Downarrow \\
+\boxed{ \mathcal C_a^i = E_a^i + \frac{k}{4\pi}B_a^i, \qquad \{\mathcal C, \mathcal C\} = 0 } \\
+\Downarrow \\
+\boxed{ D_i\mathcal C_a^i = \mathcal G_a } \\
+\Downarrow \\
+\boxed{ \Psi_k[A] = \mathcal N e^{\,i k S_{\rm CS}^{(0)}[A]/4\pi} } \\
+\Downarrow \\
+\boxed{ L(6,1) = S^3/\mathbb Z_6, \qquad \operatorname{cs}(\rho_1) = -\frac{1}{6} } \\
+\Downarrow \\
+\boxed{ \chi_k(\zeta) = e^{-2\pi i k/6} } \\
+\Downarrow \\
+\boxed{ \chi_k(\zeta) = 1 \Longrightarrow k \in 6\mathbb Z } \\
+\Downarrow \\
+\boxed{ k_{\min} = 6. }
+\end{array}
+\end{equation}
+
+The independent soliton problem begins after this foundational chain:
+\begin{equation}
+E_{\rm ITT} \longrightarrow \text{stable Hopf sectors } (Q_H = 1,2,3) \longrightarrow N_{\rm gen} = 3.
+\end{equation}
+
+\subsection{Foundational Status}
+The minimal theory therefore distinguishes three levels of statement:
+\begin{enumerate}
+\item \textbf{Standard mathematics:} gauge theory on $S^3$, BPST topology, APS spectral flow, Chern--Simons integer level quantization, lens-space topology, and rational Chern--Simons invariants.
+\item \textbf{ITT defining structure:} the helicity constraint, the timeless canonical formulation, the $\mathbb Z_6$-equivariant quantum structure, and the requirement of trivial equivariant descent.
+\item \textbf{Future ITT predictions:} the dynamical derivation of $N_{\rm gen} = 3$, the particle mass spectrum, coupling constants, and independent experimental observables.
+\end{enumerate}
+The foundational claim of ITT is therefore:
+\begin{equation}
+\boxed{ \text{timeless gauge configuration space} + \text{topological constraint} + \text{$\mathbb Z_6$ equivariant descent} \Longrightarrow k_{\min} = 6. }
+\end{equation}
+No Standard-Model parameter fit and no phenomenological factor $3 \times 2$ is used in this foundational selection of the Chern--Simons level.
+
+\end{document}
