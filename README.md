@@ -2,14 +2,9 @@
 
 > **A Timeless Canonical and Topological Gauge Framework**
 
-<<<<<<< HEAD
-
-
-=======
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23127815.svg)](https://doi.org/10.5281/zenodo.23127815)
 [![Build LaTeX Papers](https://github.com/Damione2/ITT/actions/workflows/compile-latex.yml/badge.svg)](https://github.com/Damione2/ITT/actions/workflows/compile-latex.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
->>>>>>> f6abf4d (docs: add official Zenodo DOI badge (10.5281/zenodo.23127815))
 
 ## Overview
 The Information-Topological Theory (ITT) formulates fundamental physics as a timeless canonical gauge theory defined on the gauge-orbit configuration space $\mathcal{C}_{\rm ITT} = \mathcal{A}(S^3)/\mathcal{G}(S^3)$. 
@@ -20,6 +15,7 @@ This repository hosts the modular mathematical formulation, proofs, numerical so
 The theory is structured into self-contained, independently verifiable papers and modules:
 
 - **[Paper 0: Foundation](./papers/00_foundation/)** — Timeless Hamiltonian structure, helicity constraint, CS formal state, and BPST/APS topological background.
+  - **[📄 Compiled PDF](./papers/00_foundation/ITT_Foundation_v2.1.pdf)** | **[📝 TeX Source](./papers/00_foundation/ITT_Foundation_v2.1.tex)**
 - **[Paper 1: Equivariant Level Selection](./papers/01_level6/)** — Open mathematical proof for $k_{\min} = 6$ via $L(6,1)$ lift.
 - **[Paper 2: Soliton Spectrum](./papers/02_soliton_spectrum/)** — Dynamical derivation of $N_{\rm gen} = 3$ stability.
 - **[Paper 3: Fine Structure Constant](./papers/03_fine_structure/)** — Parameter-free evaluation of $\alpha^{-1}$.
@@ -28,5 +24,16 @@ The theory is structured into self-contained, independently verifiable papers an
 ## Mathematical Claims & Status
 For an audit trail of established results versus open derivations and target predictions, see [`CLAIM_STATUS.md`](./CLAIM_STATUS.md) and [`predictions/prediction_manifest.json`](./predictions/prediction_manifest.json).
 
-## License
-All LaTeX source code and documentation are licensed under [CC-BY-4.0](./LICENSE). All mathematical and numerical code scripts are licensed under the [MIT License](./LICENSE).
+## Citation
+If you use or reference this theoretical framework, please cite it using the metadata in [`CITATION.cff`](./CITATION.cff) or the Zenodo DOI:
+
+```bibtex
+@article{Damyanov2026ITT,
+  author    = {Damyanov, Damyan},
+  title     = {Information-Topological Theory (ITT): Minimal Foundational Formulation},
+  year      = {2026},
+  doi       = {10.5281/zenodo.23127815},
+  url       = {[https://doi.org/10.5281/zenodo.23127815](https://doi.org/10.5281/zenodo.23127815)}
+}
+License
+All LaTeX source code and documentation are licensed under CC-BY-4.0. All mathematical and numerical code scripts are licensed under the MIT License.
