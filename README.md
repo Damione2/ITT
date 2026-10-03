@@ -2,8 +2,8 @@
 
 > **A Timeless Canonical and Topological Gauge Framework**
 
-[![Zenodo](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
-[![Build LaTeX Papers](https://github.com/Damione2/ITT/actions/workflows/compile-latex.yml/badge.svg)](https://github.com/Damione2/ITT/actions/workflows/compile-latex.yml)
+
+
 
 ## Overview
 The Information-Topological Theory (ITT) formulates fundamental physics as a timeless canonical gauge theory defined on the gauge-orbit configuration space $\mathcal{C}_{\rm ITT} = \mathcal{A}(S^3)/\mathcal{G}(S^3)$. 
