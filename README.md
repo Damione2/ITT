@@ -1,39 +1,34 @@
-﻿# Information-Topological Theory (ITT)
-
-> **A Timeless Canonical and Topological Gauge Framework**
-
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23127815.svg)](https://doi.org/10.5281/zenodo.23127815)
-[![Build LaTeX Papers](https://github.com/Damione2/ITT/actions/workflows/compile-latex.yml/badge.svg)](https://github.com/Damione2/ITT/actions/workflows/compile-latex.yml)
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-
-## Overview
-The Information-Topological Theory (ITT) formulates fundamental physics as a timeless canonical gauge theory defined on the gauge-orbit configuration space $\mathcal{C}_{\rm ITT} = \mathcal{A}(S^3)/\mathcal{G}(S^3)$. 
-
-This repository hosts the modular mathematical formulation, proofs, numerical solvers, and preregistered physical predictions of ITT.
-
-## Repository Structure & Roadmap
-The theory is structured into self-contained, independently verifiable papers and modules:
-
-- **[Paper 0: Foundation](./papers/00_foundation/)** — Timeless Hamiltonian structure, helicity constraint, CS formal state, and BPST/APS topological background.
-  - **[📄 Compiled PDF](./papers/00_foundation/ITT_Foundation_v2.1.pdf)** | **[📝 TeX Source](./papers/00_foundation/ITT_Foundation_v2.1.tex)**
-- **[Paper 1: Equivariant Level Selection](./papers/01_level6/)** — Open mathematical proof for $k_{\min} = 6$ via $L(6,1)$ lift.
-- **[Paper 2: Soliton Spectrum](./papers/02_soliton_spectrum/)** — Dynamical derivation of $N_{\rm gen} = 3$ stability.
-- **[Paper 3: Fine Structure Constant](./papers/03_fine_structure/)** — Parameter-free evaluation of $\alpha^{-1}$.
-- **[Paper 4-7](./papers/)** — Lepton/Quark mass spectra, magnetic anomalies, and cosmological bounds.
-
-## Mathematical Claims & Status
-For an audit trail of established results versus open derivations and target predictions, see [`CLAIM_STATUS.md`](./CLAIM_STATUS.md) and [`predictions/prediction_manifest.json`](./predictions/prediction_manifest.json).
-
-## Citation
-If you use or reference this theoretical framework, please cite it using the metadata in [`CITATION.cff`](./CITATION.cff) or the Zenodo DOI:
-
-```bibtex
-@article{Damyanov2026ITT,
+﻿Information-Topological Theory (ITT)Minimal Foundational Formulation — Version 2.1OverviewThe Information-Topological Theory (ITT) formulates fundamental physics as a timeless canonical gauge theory defined on the gauge-orbit configuration space:$$\mathcal C_{\rm ITT} = \frac{\mathcal A(S^3)}{\mathcal G(S^3)}$$where $\mathcal A(S^3)$ denotes smooth $SU(2)$ connections on $S^3$ and $\mathcal G(S^3)$ is the group of local gauge transformations.Version 2.1 establishes a strict three-tier logical taxonomy to maintain complete mathematical rigor and transparency:Standard Mathematics: $SU(2)$ gauge geometry on $S^3$, BPST topological instanton sectors, Atiyah--Patodi--Singer (APS) spectral flow, ordinary Chern--Simons integer level quantization ($k \in \mathbb Z$), Lens space topology $L(6,1)$, and flat sector rational invariants.ITT Defining Structure: Timeless canonical kinematics via the commuting densitized helicity constraint $\mathcal C_a^i \approx 0$, densitized scalar Hamiltonian $\mathcal H_{\rm ITT}$, and the $\mathbb Z_6$-equivariant quantum descent requirement.Open ITT Proofs & Predictions: Explicit construction of the $\mathbb Z_6$-equivariant prequantum lift, independent dynamical derivation of $N_{\rm gen} = 3$ family stability, and parameter-free physical observables.Core Mathematical Kinematics1. Canonical Phase Space & ITT ConstraintThe phase space is parameterized by $SU(2)$ connection forms $A_i^a(x)$ and conjugate electric fields $E_a^i(x)$ (densitized vectors of weight $+1$):$$\{A_i^a(x), E_b^j(y)\} = \delta_i^j \delta_b^a \delta^{(3)}(x-y)$$The fundamental ITT constraint aligns electric density with the magnetic field density $B_a^i = \frac{1}{2}\epsilon^{ijk} F_{jk,a}$:$$\boxed{ \mathcal C_a^i \equiv E_a^i + \frac{k}{4\pi} B_a^i = E_a^i - \frac{k}{4\pi} \frac{\delta S_{\rm CS}^{(0)}}{\delta A_i^a} \approx 0 }$$2. Constraint Algebra & Gauss IdentityOn the closed manifold $S^3$, the constraint algebra commutes identically:$$\boxed{ \{\mathcal C_a^i(x), \mathcal C_b^j(y)\} = 0 }$$By the non-Abelian Bianchi identity ($D_i B_a^i \equiv 0$), the Gauss constraint is a differential consequence of the ITT constraint:$$\boxed{ \mathcal G_a = D_i \mathcal C_a^i }$$3. Densitized Scalar HamiltonianTo preserve explicit density weight $+1$ on a spatial metric $g_{ij}$, the scalar physical Hamiltonian density is:$$\boxed{ \mathcal H_{\rm ITT} = \frac{1}{2\sqrt g} g_{ij} \mathcal C_a^i \mathcal C^{ja} }$$Physical wave functionals $\Psi[A]$ satisfy $\widehat{\mathcal C}_a^i \Psi[A] = 0$, identically implying $\widehat{\mathcal H}_{\rm ITT}\Psi[A] = 0$ (Wheeler--DeWitt timeless canonical dynamics).4. Formal Chern--Simons State & APS Index LemmaThe quantum constraint equation is formally solved by the Chern--Simons functional:$$\boxed{ \Psi_k[A] = \mathcal N \exp\left[ i \frac{k}{4\pi} S_{\rm CS}^{(0)}[A] \right] }$$For an $SU(2)$ BPST instanton on $[0,1] \times S^3$, the asymptotic topological charge $Q(R) = 3c^2 - 2c^3 \to 1$ yields the APS net spectral flow:$$\boxed{ \operatorname{SF}(\mathcal D_{A(c)}) = \operatorname{ind}\left(\mathcal D_Y^{\rm APS}\right) = 1 }$$Topological Level Selection Mechanism ($k_{\min} = 6$)ITT quotient kinematics are defined over the Lens space $L(6,1) = S^3/\mathbb Z_6$ with fundamental group $\pi_1(L(6,1)) \cong \mathbb Z_6$.Rational Invariant: For the fundamental flat representation $\rho_1$, the boundary Chern--Simons invariant evaluates to:
+$$\operatorname{cs}(\rho_1) = -\frac{1}{6} \pmod{\mathbb Z}$$Equivariant Character: Under the generator $\zeta \in \mathbb Z_6$, the fiber character of the prequantum line bundle is required to satisfy:
+$$\chi_k(\zeta) = \exp\left( 2\pi i k \operatorname{cs}(\rho_1) \right) = e^{-2\pi i k / 6}$$Descent Condition: Trivial stabilizer action ($\chi_k(\zeta) = 1$) mandates:
+$$\boxed{ k \in 6\mathbb Z \implies k_{\min} = 6 }$$Status Note: Ordinary Chern--Simons quantization yields $k \in \mathbb Z$. The minimal level $k_{\min} = 6$ is an ITT-specific selection rule conditional on the explicit construction of the $\mathbb Z_6$-equivariant lift (target of papers/01_level6).Independent Soliton Sector ($N_{\rm gen} = 3$)The number of fermion generations $N_{\rm gen} = 3$ is not used to select $k = 6$. ITT treats $N_{\rm gen} = 3$ as an independent dynamical target prediction governed by the classical energy functional $E_{\rm ITT}[n, A]$ and stable Hopf topological sectors ($Q_H = 1, 2, 3$).This strict logical decoupling prevents circular reasoning and retroactive parameter fitting.Repository Structure.
+├── papers/
+│   ├── 00_foundation/           # Paper 0: Minimal Foundational Formulation (v2.1)
+│   │   ├── ITT_Foundation_v2.1.tex
+│   │   └── ITT_Foundation_v2.1.pdf
+│   ├── 01_level6/               # Paper 1: Equivariant Lift & Level Selection (Active Target)
+│   ├── 02_soliton_spectrum/     # Paper 2: Soliton Dynamical Stability & Generation Count
+│   └── 03_fine_structure/       # Paper 3: Parameter-Free Evaluation of α^-1
+├── predictions/
+│   └── prediction_manifest.json # Preregistered Target Predictions
+├── references/
+│   └── references.bib           # Centralized BibTeX Database
+├── scripts/
+│   └── validate_manifest.py     # Schema & Integrity Checkers
+├── .github/workflows/
+│   └── compile-latex.yml        # CI Pipeline for LaTeX Paper Builds
+├── CLAIM_STATUS.md              # Audit Trail of Mathematical & Physical Claims
+├── CHANGELOG.md                 # Version History & Release Notes
+├── CITATION.cff                 # Machine-Readable Citation File
+├── LICENSE                      # CC-BY-4.0 (Docs/LaTeX) & MIT (Code)
+└── README.md                    # Repository Overview
+Claim Taxonomy & Status SummaryClaim IDTitle / FeatureTaxonomyCurrent StatusTarget ModuleM-01$S^3$ Gauge Orbit KinematicsMEstablished Mathematicspapers/00_foundationM-02BPST Instanton $Q=1$ SectorMEstablished Mathematicspapers/00_foundationM-03APS Spectral Flow Index TheoremMEstablished Mathematicspapers/00_foundationM-04Lens Space Invariant $\operatorname{cs}(\rho_1) = -1/6$MEstablished Mathematicspapers/00_foundationA-01Commuting ITT Constraint $\mathcal C_a^i \approx 0$AITT Kinematic Postulatepapers/00_foundationA-02Timeless Configuration Space $\mathcal C_{\rm ITT}$AITT Foundational Axiompapers/00_foundationD-01$\mathbb Z_6$-Equivariant Line-Bundle LiftDOpen Proof / Active Workpapers/01_level6D-02Minimal Level Selection $k_{\min} = 6$DConditional on D-01papers/01_level6P-01Soliton Family Limit $N_{\rm gen} = 3$PTarget Dynamical Proofpapers/02_soliton_spectrumP-02Fine Structure Constant $\alpha^{-1} \approx 137.036$PPreregistered Targetpapers/03_fine_structureTaxonomy Legend: M = Established Mathematics; A = ITT Axiom/Postulate; D = Derivation / Open Proof; P = Physical Prediction.CitationIf you use or reference this theoretical framework, please cite it using the metadata in CITATION.cff or the following BibTeX entry:@article{Damyanov2026ITT,
   author    = {Damyanov, Damyan},
-  title     = {Information-Topological Theory (ITT): Minimal Foundational Formulation},
+  title     = {Information-Topological Theory: Minimal Foundational Formulation},
+  journal   = {ITT Framework Research Repository},
   year      = {2026},
+  version   = {2.1},
   doi       = {10.5281/zenodo.23127815},
-  url       = {[https://doi.org/10.5281/zenodo.23127815](https://doi.org/10.5281/zenodo.23127815)}
+  url       = {https://doi.org/10.5281/zenodo.23127815}
 }
-License
-All LaTeX source code and documentation are licensed under CC-BY-4.0. All mathematical and numerical code scripts are licensed under the MIT License.
+Key Historical ReferencesBelavin, A. A., Polyakov, A. M., Schwartz, A. S., & Tyupkin, Y. S. (1975). Phys. Lett. B, 59, 85–87.Atiyah, M. F., Patodi, V. K., & Singer, I. M. (1975). Math. Proc. Cambridge Philos. Soc., 77, 43–69.Witten, E. (1989). Commun. Math. Phys., 121, 351–399.Jeffrey, L. C. (1992). Commun. Math. Phys., 147, 563–604.Kirk, P., & Klassen, E. (1990). Math. Ann., 287, 343–367.Freed, D. S. (1995). Adv. Math., 113, 237–303.LicenseDocumentation, Papers, and LaTeX Source Code: Creative Commons Attribution 4.0 International (CC-BY-4.0)Software, Verification Scripts, and Algorithms: MIT License

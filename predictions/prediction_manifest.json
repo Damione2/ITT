@@ -1,0 +1,31 @@
+﻿{
+  "schema_version": "1.0.0",
+  "protocol": "Preregistered Parameter-Free Prediction Manifest",
+  "policy": "No retroactive parameter fitting allowed in foundational modules.",
+  "predictions": [
+    {
+      "id": "P-02",
+      "parameter": "alpha_inv",
+      "symbol": "\\alpha^{-1}",
+      "topological_origin": "Hopf framing + torsion invariant",
+      "inputs": ["k_min=6", "cs(rho_1)=-1/6"],
+      "free_parameters_count": 0,
+      "derived_value": "137.035999",
+      "experimental_value_pdg2024": "137.035999177",
+      "prediction_date": "2026-10-03",
+      "status": "Preregistered Target"
+    },
+    {
+      "id": "P-03",
+      "parameter": "sum_m_nu",
+      "symbol": "\\sum m_{\\nu}",
+      "topological_origin": "Lepton sector topological volume",
+      "inputs": ["k_min=6"],
+      "free_parameters_count": 0,
+      "derived_value": "TBD",
+      "experimental_value_pdg2024": "< 0.12 eV",
+      "prediction_date": "2026-10-03",
+      "status": "Under Calculation"
+    }
+  ]
+}

@@ -4,6 +4,7 @@ authors:
   - family-names: "Damyanov"
     given-names: "Damyan"
 title: "Information-Topological Theory (ITT): Minimal Foundational Formulation"
-version: 2.1.1
-date-released: 2026-10-04
+version: 2.1.2
+date-released: 2026-10-05
+doi: "10.5281/zenodo.23127815"
 repository-code: "https://github.com/Damione2/ITT"
