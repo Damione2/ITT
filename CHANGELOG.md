@@ -2,6 +2,7 @@
 
 ## [2.1.3] - 2026-10-05
 ### Fixed
+- Replaced non-portable operator macros with portable `\mathrm{...}` forms to support restricted math renderers/validators.
 - Synchronized `main` with the corrected Paper 0 foundation used in the `v2.1.2` tag.
 - Fixed the LaTeX CI path so `root_file` is resolved relative to `working_directory`.
 - Updated `actions/checkout` from `@v4` to `@v5`.

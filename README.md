@@ -24,7 +24,7 @@ The foundational manuscript establishes and documents the following standard or 
 - The formal Chern--Simons state solving the canonical constraint.
 - The unit BPST sector and its APS net spectral-flow index.
 - Ordinary Chern--Simons quantization $k\in\mathbb Z$.
-- The lens-space sector $L(6,1)=S^3/\mathbb Z_6$ and the convention-fixed rational invariant $\operatorname{cs}(\rho_1)=-1/6$.
+- The lens-space sector $L(6,1)=S^3/\mathbb Z_6$ and the convention-fixed rational invariant $\mathrm{cs}(\rho_1)=-1/6$.
 
 ITT then adds a **theory-specific equivariant descent postulate**. Under an explicit construction of the corresponding $\mathbb Z_6$-equivariant lift, the descent condition gives
 

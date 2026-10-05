@@ -14,7 +14,7 @@ This document tracks the precise logical status of core ITT claims and keeps est
 | **M-01** | $S^3$ gauge-orbit geometry | **M** | Established Mathematics | `papers/00_foundation` |
 | **M-02** | BPST instanton $Q=1$ sector | **M** | Established Mathematics | `papers/00_foundation` |
 | **M-03** | APS spectral-flow index theorem | **M** | Established Mathematics | `papers/00_foundation` |
-| **M-04** | Lens-space CS invariant $\operatorname{cs}(\rho_1)=-1/6$ | **M** | Derived for fixed conventions | `papers/00_foundation` |
+| **M-04** | Lens-space CS invariant $\mathrm{cs}(\rho_1)=-1/6$ | **M** | Derived for fixed conventions | `papers/00_foundation` |
 | **A-01** | Densitized constraint / helicity alignment $\mathcal C_a^i\approx0$ | **A** | ITT Kinematic Postulate | `papers/00_foundation` |
 | **A-02** | Timeless canonical gauge-orbit space $\mathcal C_{\rm ITT}$ | **A** | ITT Foundational Axiom | `papers/00_foundation` |
 | **D-01** | $\mathbb Z_6$-equivariant prequantum lift | **D** | **Open Proof / Active Work** | Paper 1 target |
