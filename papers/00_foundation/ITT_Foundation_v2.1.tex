@@ -110,8 +110,7 @@ A\wedge dA+\frac23A\wedge A\wedge A
 
 With the trace convention above, its functional derivative is
 \begin{equation}
-\frac{\delta S_{\rm CS}^{(0)}}{\delta A_i^a(x)}
-=-B_a^i(x).
+\frac{\delta S_{\rm CS}^{(0)}}{\delta A_i^a(x)}=-B_a^i(x).
 \end{equation}
 
 The fundamental ITT constraint is
@@ -201,11 +200,10 @@ This definition fixes the density weight explicitly.
 
 \section{Formal Chern--Simons State}
 
-Canonical quantization is represented formally by
+Canonical quantization is represented formally\cite{Witten1989} by
 \begin{equation}
 \widehat E_a^i
-=
--i\frac{\delta}{\delta A_i^a}.
+=-i\frac{\delta}{\delta A_i^a}.
 \end{equation}
 
 Define
@@ -215,16 +213,14 @@ Define
 =
 \mathcal N
 \exp\left[
-i\frac{k}{4\pi}S_{\rm CS}^{(0)}[A]
+ i\frac{k}{4\pi}S_{\rm CS}^{(0)}[A]
 \right].
 }
 \end{equation}
-
 Then
 \begin{equation}
 \widehat E_a^i\Psi_k[A]
-=
--\frac{k}{4\pi}B_a^i\Psi_k[A],
+=-\frac{k}{4\pi}B_a^i\Psi_k[A],
 \end{equation}
 so that formally
 \begin{equation}
@@ -243,22 +239,19 @@ This is a formal exact solution of the ITT constraint system. A complete Hilbert
 
 \section{Unit Topological Sector: BPST and APS}
 
-Consider the standard $SU(2)$ BPST instanton of scale $\rho$ on flat $\mathbb R^4$, restricted to the four-ball $D_R^4$. Define
+Consider the standard $SU(2)$ BPST instanton of scale $\rho$ on flat $\mathbb R^4$, restricted to the four-ball $D_R^4$\cite{BPST1975}. Define
 \begin{equation}
 c=\frac{R^2}{R^2+\rho^2}.
 \end{equation}
-
 With the normalization above,
 \begin{equation}
 Q(R)
-=
--\frac{1}{8\pi^2}
+=-\frac{1}{8\pi^2}
 \int_{D_R^4}\operatorname{tr}(F\wedge F)
 =
 3c^2-2c^3
 =
-\frac{R^4(R^2+3\rho^2)}
-{(R^2+\rho^2)^3}.
+\frac{R^4(R^2+3\rho^2)}{(R^2+\rho^2)^3}.
 \end{equation}
 
 On the boundary,
@@ -267,11 +260,8 @@ A|_{S^3_R}=c\,g^{-1}dg,
 \end{equation}
 and the Chern--Simons transgression gives, with the same orientation convention,
 \begin{equation}
-\frac{1}{2\pi}S_{\rm CS}(A|_{S^3_R})
-=
-3c^2-2c^3.
+\frac{1}{2\pi}S_{\rm CS}(A|_{S^3_R})=3c^2-2c^3.
 \end{equation}
-
 Thus
 \begin{equation}
 \lim_{R/\rho\to\infty}Q(R)=1.
@@ -285,8 +275,7 @@ with product metric and the family
 \begin{equation}
 A(c)=c\,g^{-1}dg.
 \end{equation}
-
-The parameter $c$ labels a path in configuration space and is not physical time. For the unit-winding interpolation, the standard APS spectral-flow correspondence identifies the net spectral flow with the unit topological index:
+The parameter $c$ labels a path in configuration space and is not physical time. For the unit-winding interpolation, the standard APS spectral-flow correspondence identifies the net spectral flow with the unit topological index\cite{APS1975}:
 \begin{equation}
 \boxed{
 \operatorname{SF}(\mathcal D_{A(c)})
@@ -295,8 +284,7 @@ The parameter $c$ labels a path in configuration space and is not physical time.
 \left(
 \mathcal D_Y^{\rm APS}
 \right)
-=
-1.
+=1.
 }
 \end{equation}
 
@@ -312,8 +300,7 @@ the normalized Chern--Simons amplitude is gauge invariant only when the level sa
 \begin{equation}
 \boxed{k\in\mathbb Z.}
 \end{equation}
-
-This is the standard Chern--Simons quantization condition. It does not select $k=6$.
+This is the standard Chern--Simons quantization condition\cite{Witten1989}. It does not select $k=6$.
 
 \section{Lens-Space Sector}
 
@@ -321,10 +308,7 @@ The ITT quotient geometry is defined by the free diagonal action
 \begin{equation}
 (z_1,z_2)
 \longmapsto
-\left(
-e^{2\pi i/6}z_1,
-e^{2\pi i/6}z_2
-\right)
+\left(e^{2\pi i/6}z_1,e^{2\pi i/6}z_2\right)
 \end{equation}
 on $S^3\subset\mathbb C^2$. Thus
 \begin{equation}
@@ -342,8 +326,8 @@ Let $\rho_1$ be the fundamental non-trivial flat representation
 \rho_1(\gamma)
 =
 \begin{pmatrix}
-e^{2\pi i/6}&0\\
-0&e^{-2\pi i/6}
+ e^{2\pi i/6}&0\\
+ 0&e^{-2\pi i/6}
 \end{pmatrix},
 \end{equation}
 for a chosen generator $\gamma$ of $\pi_1(L(6,1))$.
@@ -364,40 +348,33 @@ A\wedge dA+\frac23A\wedge A\wedge A
 With the orientation and trace convention fixed above, the fundamental flat sector has
 \begin{equation}
 \boxed{
-\operatorname{cs}(\rho_1)
-=
--\frac16\pmod{\mathbb Z}.
+\operatorname{cs}(\rho_1)=-\frac16\pmod{\mathbb Z}.
 }
 \end{equation}
 
-One way to obtain this value is through the $(-6)$-framed surgery description of $L(6,1)$. The intersection matrix of the corresponding two-handlebody is $Q=(-6)$, and its inverse gives the rational boundary linking pairing $Q^{-1}=(-1/6)$. The reducible $SU(2)$ extension $E=L\oplus L^{-1}$ satisfies $c_2(E)=-c_1(L)^2$, producing the stated secondary invariant modulo integers.
+One way to obtain this value is through the $(-6)$-framed surgery description of $L(6,1)$\cite{Jeffrey1992,KirkKlassen1990}. The intersection matrix of the corresponding two-handlebody is $Q=(-6)$, and its inverse gives the rational boundary linking pairing $Q^{-1}=(-1/6)$. The reducible $SU(2)$ extension $E=L\oplus L^{-1}$ satisfies $c_2(E)=-c_1(L)^2$, producing the stated secondary invariant modulo integers.
 
 \begin{remark}
-The rational value $-1/6$ is a three-dimensional Chern--Simons invariant of a flat boundary sector. It is not being identified with an ordinary second Chern number on the closed four-manifold $L(6,1)\times S^1$. The distinction is essential.
+The rational value $-1/6$ is a three-dimensional Chern--Simons invariant of a flat boundary sector. It is not being identified with an ordinary second Chern number on the closed four-manifold $L(6,1)\times S^1$. The latter distinction is essential.
 \end{remark}
 
-\section{ITT $\mathbb Z_6$-Equivariant Descent Condition}
+\section{\texorpdfstring{ITT $\mathbb Z_6$-Equivariant Descent Condition}{ITT Z6-Equivariant Descent Condition}}
 
 The previous section determines a distinguished rational Chern--Simons invariant. ITT now adds a separate, theory-specific requirement: the quantum prequantum object must admit an equivariant lift under the chosen $\mathbb Z_6$ quotient action and descend with trivial stabilizer character.
 
-Let $\mathcal L^k$ denote the level-$k$ prequantum Chern--Simons line-bundle object over the relevant ITT configuration space, equipped with a proposed $\mathbb Z_6$-equivariant lift. Let $\zeta$ denote the generator of $\mathbb Z_6$.
+Let $\mathcal L^k$ denote the level-$k$ prequantum Chern--Simons line-bundle object over the relevant ITT configuration space, equipped with a proposed $\mathbb Z_6$-equivariant lift\cite{Freed1995}. Let $\zeta$ denote the generator of $\mathbb Z_6$.
 
 The required equivariant character is
 \begin{equation}
 \boxed{
 \chi_k(\zeta)
 \equiv
-\exp\left(
-2\pi i k\,\operatorname{cs}(\rho_1)
-\right).
+\exp\left(2\pi i k\,\operatorname{cs}(\rho_1)\right).
 }
 \end{equation}
-
 Using the established value
 \begin{equation}
-\operatorname{cs}(\rho_1)
-=
--\frac16\pmod{\mathbb Z},
+\operatorname{cs}(\rho_1)=-\frac16\pmod{\mathbb Z},
 \end{equation}
 we obtain
 \begin{equation}
@@ -409,11 +386,8 @@ we obtain
 \begin{postulate}[ITT Equivariant Lift]
 The prequantum Chern--Simons object used by ITT admits a $\mathbb Z_6$-equivariant lift whose stabilizer character over the fundamental flat sector is
 \begin{equation}
-\chi_k(\zeta)
-=
-\exp\left(
-2\pi i k\,\operatorname{cs}(\rho_1)
-\right).
+\chi_k(\zeta)=
+\exp\left(2\pi i k\,\operatorname{cs}(\rho_1)\right).
 \end{equation}
 \end{postulate}
 
@@ -425,38 +399,29 @@ For the ITT quantum object to descend to the quotient by $\mathbb Z_6$, the stab
 \begin{equation}
 \chi_k(\zeta)=1.
 \end{equation}
-
 Therefore
 \begin{equation}
 e^{-2\pi i k/6}=1
 \end{equation}
 and hence
 \begin{equation}
-\boxed{
-k\in6\mathbb Z.
-}
+\boxed{k\in6\mathbb Z.}
 \end{equation}
-
 The minimal positive ITT-compatible level is consequently
 \begin{equation}
-\boxed{
-k_{\min}=6.
-}
+\boxed{k_{\min}=6.}
 \end{equation}
 
 The logical status is important:
 \begin{equation}
 \text{ordinary Chern--Simons theory}
-\Rightarrow
-k\in\mathbb Z,
+\Rightarrow k\in\mathbb Z,
 \end{equation}
 whereas
 \begin{equation}
 \text{ITT equivariant-descent postulate}
-\Rightarrow
-k\in6\mathbb Z.
+\Rightarrow k\in6\mathbb Z.
 \end{equation}
-
 Thus $k=6$ is an ITT selection rule, not a universal theorem of ordinary $SU(2)$ Chern--Simons theory.
 
 \section{Independent Soliton Sector}
@@ -475,84 +440,30 @@ for which the stable topological sectors satisfy
 \begin{equation}
 Q_H=1,2,3,
 \end{equation}
-while higher-charge configurations are unstable or energetically decomposable.
-
-Until such a stability theorem is obtained, $N_{\rm gen}=3$ remains an open ITT result and is not used to derive $k=6$.
+while higher-charge configurations are unstable or energetically decomposable. Until such a stability theorem is obtained, $N_{\rm gen}=3$ remains an open ITT result and is not used to derive $k=6$.
 
 \section{Foundational Logical Chain}
 
 The minimal ITT foundation is summarized by
 \begin{equation}
 \begin{array}{c}
-\mathcal C_{\rm ITT}
-=
-\mathcal A(S^3)/\mathcal G(S^3)
-\\[4pt]
-\Downarrow
-\\[4pt]
-\boxed{
-\mathcal C_a^i
-=
-E_a^i+\frac{k}{4\pi}B_a^i,
-\qquad
-\{\mathcal C,\mathcal C\}=0
-}
-\\[4pt]
-\Downarrow
-\\[4pt]
-\boxed{
-D_i\mathcal C_a^i=\mathcal G_a
-}
-\\[4pt]
-\Downarrow
-\\[4pt]
-\boxed{
-\Psi_k[A]
-=
-\mathcal N e^{\,ikS_{\rm CS}^{(0)}[A]/4\pi}
-}
-\\[4pt]
-\Downarrow
-\\[4pt]
-\boxed{
-Q_{\rm BPST}\to1,
-\qquad
-\operatorname{SF}
-=
-\operatorname{ind}_{\rm APS}
-=
-1
-}
-\\[4pt]
-\Downarrow
-\\[4pt]
-\boxed{
-L(6,1)=S^3/\mathbb Z_6,
-\qquad
-\operatorname{cs}(\rho_1)=-\frac16
-}
-\\[4pt]
-\Downarrow
-\\[4pt]
-\boxed{
-\chi_k(\zeta)=e^{-2\pi i k/6}
-\quad
-\text{(ITT equivariant-lift postulate)}
-}
-\\[4pt]
-\Downarrow
-\\[4pt]
-\boxed{
-\chi_k(\zeta)=1
-\Longrightarrow
-k\in6\mathbb Z
-}
-\\[4pt]
-\Downarrow
-\\[4pt]
-\boxed{
-k_{\min}=6.
-}
+\mathcal C_{\rm ITT}=\mathcal A(S^3)/\mathcal G(S^3)\\[4pt]
+\Downarrow\\[4pt]
+\boxed{\mathcal C_a^i=E_a^i+\frac{k}{4\pi}B_a^i,\qquad \{\mathcal C,\mathcal C\}=0}\\[4pt]
+\Downarrow\\[4pt]
+\boxed{D_i\mathcal C_a^i=\mathcal G_a}\\[4pt]
+\Downarrow\\[4pt]
+\boxed{\Psi_k[A]=\mathcal N e^{\,ikS_{\rm CS}^{(0)}[A]/4\pi}}\\[4pt]
+\Downarrow\\[4pt]
+\boxed{Q_{\rm BPST}\to1,\qquad \operatorname{SF}=\operatorname{ind}_{\rm APS}=1}\\[4pt]
+\Downarrow\\[4pt]
+\boxed{L(6,1)=S^3/\mathbb Z_6,\qquad \operatorname{cs}(\rho_1)=-\frac16}\\[4pt]
+\Downarrow\\[4pt]
+\boxed{\chi_k(\zeta)=e^{-2\pi ik/6}\quad\text{(ITT equivariant-lift postulate)}}\\[4pt]
+\Downarrow\\[4pt]
+\boxed{\chi_k(\zeta)=1\Longrightarrow k\in6\mathbb Z}\\[4pt]
+\Downarrow\\[4pt]
+\boxed{k_{\min}=6.}
 \end{array}
 \end{equation}
 
@@ -588,7 +499,7 @@ $\alpha$, masses, $g-2$, cosmology & Future & Prediction modules \\
 \end{tabular}
 \end{center}
 
-The foundational claim of ITT is therefore:
+The foundational theory therefore makes the following restricted claim:
 \begin{equation}
 \boxed{
 \text{timeless canonical gauge structure}
@@ -602,10 +513,9 @@ k_{\min}=6
 \end{equation}
 where the final implication is conditional on the explicit construction of the ITT equivariant lift.
 
-No Standard-Model parameter fit and no phenomenological factor $3\times2$ is used in this foundational selection of the Chern--Simons level.
+No Standard-Model parameter fitting and no phenomenological relation such as $3\times2$ is used in the foundational selection of the Chern--Simons level.
 
 \section*{References}
-
 \begin{thebibliography}{99}
 
 \bibitem{BPST1975}

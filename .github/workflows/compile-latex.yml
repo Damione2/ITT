@@ -1,4 +1,4 @@
-﻿name: Compile LaTeX Papers
+name: Compile LaTeX Papers
 
 on:
   push:
@@ -8,22 +8,23 @@ on:
   pull_request:
     paths:
       - 'papers/**/*.tex'
+      - '.github/workflows/compile-latex.yml'
 
 jobs:
   build_paper_0:
-        runs-on: ubuntu-latest
-        steps:
-          - name: Checkout Repository
-            uses: actions/checkout@v4
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v5
 
-          - name: Compile Foundation Paper
-            uses: xu-cheng/latex-action@v3
-            with:
-              root_file: papers/00_foundation/ITT_Foundation_v2.1.tex
-              working_directory: papers/00_foundation/
+      - name: Compile Foundation Paper
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: ITT_Foundation_v2.1.tex
+          working_directory: papers/00_foundation/
 
-          - name: Upload PDF Artifact
-            uses: actions/upload-artifact@v4
-            with:
-              name: ITT_Foundation_v2.1.pdf
-              path: papers/00_foundation/ITT_Foundation_v2.1.pdf
+      - name: Upload PDF Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ITT_Foundation_v2.1.pdf
+          path: papers/00_foundation/ITT_Foundation_v2.1.pdf
