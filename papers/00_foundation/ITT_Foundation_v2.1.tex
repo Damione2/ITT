@@ -12,7 +12,7 @@
 \hypersetup{
   pdftitle={Information-Topological Theory: Minimal Foundational Formulation},
   pdfauthor={Damyan Damyanov},
-  pdfsubject={Timeless canonical gauge formulation and ITT topological level selection}
+  pdfsubject={Timeless canonical gauge formulation and conditional Chern--Simons level selection}
 }
 
 \newtheorem{definition}{Definition}[section]
@@ -27,13 +27,17 @@
 \author{\textbf{Damyan Damyanov}\\
 \small\textit{Independent Researcher, Bulgaria}\\
 \small\href{mailto:damione1@gmail.com}{damione1@gmail.com}}
-\date{Version 2.1 --- October 2026}
+\date{Version 2.1.4 --- October 2026}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-We present the minimal foundational formulation of Information-Topological Theory (ITT) as a timeless canonical gauge framework on a three-dimensional configuration space. The formulation separates standard mathematical results from ITT-specific postulates and future dynamical predictions. The standard sector contains the $SU(2)$ gauge structure on $S^3$, the canonical ITT constraint, its formal Chern--Simons state, the unit BPST topological sector, the associated Atiyah--Patodi--Singer spectral-flow construction, integer Chern--Simons level quantization, and the rational Chern--Simons invariant of the fundamental flat $SU(2)$ sector of $L(6,1)=S^3/\mathbb Z_6$. ITT then imposes an additional $\mathbb Z_6$-equivariant descent condition on the quantum line-bundle structure. When the corresponding equivariant lift is explicitly constructed, this condition gives $k\in6\mathbb Z$ and hence the minimal positive level $k_{\min}=6$. The latter is therefore presented here as an ITT selection mechanism conditional on completion of the equivariant-lift construction, not as a universal quantization condition of ordinary Chern--Simons theory. No Standard-Model parameter fitting is used in the foundational formulation.
+We present the minimal foundational formulation of Information-Topological Theory (ITT) as a timeless canonical gauge framework on a three-dimensional configuration space. The formulation separates standard mathematical results from ITT-specific postulates, completed intermediate derivations, negative mathematical results, and future dynamical predictions.
+
+The standard sector contains the $SU(2)$ gauge structure on $S^3$, the canonical ITT constraint, its formal Chern--Simons state, the unit BPST topological sector, the associated Atiyah--Patodi--Singer spectral-flow construction, ordinary integer Chern--Simons level quantization, and the convention-fixed rational Chern--Simons invariant of the fundamental flat sector of $L(6,1)=S^3/\mathbb Z_6$. The level-$k$ differential Chern--Simons evaluation of this sector gives the phase $\exp(2\pi i k\,\mathrm{cs}(\rho_1))=e^{-2\pi i k/6}$. A further analysis shows that the presently specified data do not canonically identify this phase with a stabilizer action on a hypothetical three-dimensional prequantum line fiber. ITT therefore formulates level selection as an explicit phase-triviality postulate rather than as an unproved equivariant-line-bundle theorem.
+
+Under that theory-specific selection postulate, $Z_k(L(6,1),\rho_1)=1$, one obtains $k\in6\mathbb Z$ and hence $k_{\min}=6$. No Standard-Model parameter fitting or generation-count argument is used in the foundational level selection.
 \end{abstract}
 
 \section{Scope and Logical Status}
@@ -46,27 +50,26 @@ where $\mathcal A(S^3)$ denotes the space of smooth $SU(2)$ connections on $S^3$
 
 No preferred external physical time is postulated at the foundational level. A parameter used to label a family of configurations is therefore not identified with physical time.
 
-The theory separates three logical levels:
+The theory separates four logical levels:
 \begin{enumerate}[label=(\roman*)]
     \item \textbf{Standard mathematics:} gauge theory on $S^3$, BPST topology, APS spectral flow, ordinary Chern--Simons level quantization, lens-space topology, and rational Chern--Simons invariants.
-    \item \textbf{ITT defining structure:} the timeless canonical constraint and the requirement of a $\mathbb Z_6$-equivariant quantum descent condition.
-    \item \textbf{Open ITT results:} the explicit construction of the equivariant prequantum lift, the dynamical derivation of $N_{\rm gen}=3$, and all subsequent precision predictions.
+    \item \textbf{ITT defining structure:} the timeless canonical constraint and the phase-triviality requirement used for level selection.
+    \item \textbf{Completed intermediate derivations:} the differential Chern--Simons phase and its induced cyclic character associated with the selected fundamental lens-space sector.
+    \item \textbf{Open or future ITT results:} dynamical derivation of $N_{\rm gen}=3$, precision phenomenology, and any stronger physical interpretation of the selected level.
 \end{enumerate}
 
-The central level-selection statement is therefore conditional: once the ITT $\mathbb Z_6$-equivariant lift is explicitly constructed with the character determined by the fundamental flat-sector Chern--Simons invariant, the descent condition selects $k_{\min}=6$.
+The explicit three-dimensional equivariant-line interpretation is not assumed as an established theorem. Paper 1 records the mathematical obstruction to obtaining such an identification from the presently specified data.
 
 \section{Canonical Configuration Space and Conventions}
 
 \subsection{Gauge Variables}
-
 The canonical variables are
 \begin{equation}
 A_i^a(x),\qquad E_a^i(x),
 \end{equation}
 with fundamental Poisson brackets
 \begin{equation}
-\{A_i^a(x),E_b^j(y)\}
-=\delta_i^{\,j}\delta_b^{\,a}\delta^{(3)}(x-y),
+\{A_i^a(x),E_b^j(y)\}=\delta_i^{\,j}\delta_b^{\,a}\delta^{(3)}(x-y),
 \end{equation}
 and
 \begin{equation}
@@ -75,9 +78,7 @@ and
 \{E_a^i(x),E_b^j(y)\}=0.
 \end{equation}
 
-The momentum $E_a^i$ is taken to be a densitized spatial vector of weight $+1$.
-
-The $SU(2)$ generators are normalized by
+The momentum $E_a^i$ is taken to be a densitized spatial vector of weight $+1$. The $SU(2)$ generators are normalized by
 \begin{equation}
 T_a=\frac{\sigma_a}{2i},
 \qquad
@@ -205,7 +206,6 @@ Canonical quantization is represented formally\cite{Witten1989} by
 \widehat E_a^i
 =-i\frac{\delta}{\delta A_i^a}.
 \end{equation}
-
 Define
 \begin{equation}
 \boxed{
@@ -228,7 +228,6 @@ so that formally
 \widehat{\mathcal C}_a^i\Psi_k[A]=0.
 }
 \end{equation}
-
 Consequently, for the positive quadratic operator corresponding to the classical constraint,
 \begin{equation}
 \widehat{\mathcal H}_{\rm ITT}\Psi_k[A]=0
@@ -253,7 +252,6 @@ Q(R)
 =
 \frac{R^4(R^2+3\rho^2)}{(R^2+\rho^2)^3}.
 \end{equation}
-
 On the boundary,
 \begin{equation}
 A|_{S^3_R}=c\,g^{-1}dg,
@@ -281,13 +279,10 @@ The parameter $c$ labels a path in configuration space and is not physical time.
 \mathrm{SF}(\mathcal D_{A(c)})
 =
 \mathrm{ind}
-\left(
-\mathcal D_Y^{\rm APS}
-\right)
+\left(\mathcal D_Y^{\rm APS}\right)
 =1.
 }
 \end{equation}
-
 The statement above concerns the net spectral flow. It does not assert, without a separate spectral calculation, that exactly one individual eigenvalue crosses zero.
 
 \section{Standard Chern--Simons Level Quantization}
@@ -320,7 +315,6 @@ and
 \begin{equation}
 \pi_1(L(6,1))\cong\mathbb Z_6.
 \end{equation}
-
 Let $\rho_1$ be the fundamental non-trivial flat representation
 \begin{equation}
 \rho_1(\gamma)
@@ -344,85 +338,108 @@ A\wedge dA+\frac23A\wedge A\wedge A
 \right)
 \pmod{\mathbb Z}.
 \end{equation}
-
 With the orientation and trace convention fixed above, the fundamental flat sector has
 \begin{equation}
 \boxed{
 \mathrm{cs}(\rho_1)=-\frac16\pmod{\mathbb Z}.
 }
 \end{equation}
-
-One way to obtain this value is through the $(-6)$-framed surgery description of $L(6,1)$\cite{Jeffrey1992,KirkKlassen1990}. The intersection matrix of the corresponding two-handlebody is $Q=(-6)$, and its inverse gives the rational boundary linking pairing $Q^{-1}=(-1/6)$. The reducible $SU(2)$ extension $E=L\oplus L^{-1}$ satisfies $c_2(E)=-c_1(L)^2$, producing the stated secondary invariant modulo integers.
+One way to obtain this value is through the $(-6)$-framed surgery description of $L(6,1)$\cite{Jeffrey1992,KirkKlassen1990}. The inverse surgery matrix gives the rational boundary linking pairing $-1/6$. The fractional value is a three-dimensional secondary invariant.
 
 \begin{remark}
-The rational value $-1/6$ is a three-dimensional Chern--Simons invariant of a flat boundary sector. It is not being identified with an ordinary second Chern number on the closed four-manifold $L(6,1)\times S^1$. The latter distinction is essential.
+The rational value $-1/6$ is not an ordinary second Chern number on a closed four-manifold such as $L(6,1)\times S^1$. Ordinary integral characteristic numbers remain integral.
 \end{remark}
 
-\section{\texorpdfstring{ITT $\mathbb Z_6$-Equivariant Descent Condition}{ITT Z6-Equivariant Descent Condition}}
+\section{Differential Chern--Simons Phase}
 
-The previous section determines a distinguished rational Chern--Simons invariant. ITT now adds a separate, theory-specific requirement: the quantum prequantum object must admit an equivariant lift under the chosen $\mathbb Z_6$ quotient action and descend with trivial stabilizer character.
-
-Let $\mathcal L^k$ denote the level-$k$ prequantum Chern--Simons line-bundle object over the relevant ITT configuration space, equipped with a proposed $\mathbb Z_6$-equivariant lift\cite{Freed1995}. Let $\zeta$ denote the generator of $\mathbb Z_6$.
-
-The required equivariant character is
+The level-$k$ characteristic class is the integral class
+\begin{equation}
+kc_2\in H^4(BSU(2);\mathbb Z),
+\end{equation}
+with a differential refinement in the sense of Cheeger--Simons differential characters\cite{CheegerSimons1985,Freed1995}.
+For the flat connection $(P_{\rho_1},A_{\rho_1})$ on the closed three-manifold $L(6,1)$, its evaluation gives the exponentiated Chern--Simons invariant
 \begin{equation}
 \boxed{
-\chi_k(\zeta)
-\equiv
+Z_k(L(6,1),\rho_1)
+=
 \exp\left(2\pi i k\,\mathrm{cs}(\rho_1)\right).
 }
-\end{equation}
-Using the established value
-\begin{equation}
-\mathrm{cs}(\rho_1)=-\frac16\pmod{\mathbb Z},
-\end{equation}
-we obtain
-\begin{equation}
-\boxed{
-\chi_k(\zeta)=e^{-2\pi i k/6}.
-}
-\end{equation}
-
-\begin{postulate}[ITT Equivariant Lift]
-The prequantum Chern--Simons object used by ITT admits a $\mathbb Z_6$-equivariant lift whose stabilizer character over the fundamental flat sector is
-\begin{equation}
-\chi_k(\zeta)=
-\exp\left(2\pi i k\,\mathrm{cs}(\rho_1)\right).
-\end{equation}
-\end{postulate}
-
-This is the principal open mathematical completion of the present foundation: the explicit construction of the lift, including its underlying line-bundle geometry and equivariance data, is deferred to the dedicated level-selection paper.
-
-\section{ITT Level-Selection Rule}
-
-For the ITT quantum object to descend to the quotient by $\mathbb Z_6$, the stabilizer must act trivially on the fiber:
-\begin{equation}
-\chi_k(\zeta)=1.
 \end{equation}
 Therefore
 \begin{equation}
-e^{-2\pi i k/6}=1
+\boxed{
+Z_k(L(6,1),\rho_1)=e^{-2\pi i k/6}.
+}
 \end{equation}
-and hence
+This is a derived consequence of the standard differential Chern--Simons construction together with the convention-fixed lens-space invariant; it is not an ITT postulate.
+
+\section{Cyclic Character Induced by the Fundamental Phase}
+
+Let
+\begin{equation}
+\Gamma=\mathbb Z_6=\langle\zeta\mid\zeta^6=1\rangle.
+\end{equation}
+Since $k\in\mathbb Z$,
+\begin{equation}
+Z_k^6=e^{-2\pi i k}=1.
+\end{equation}
+Hence the phase canonically determines, relative to the chosen generator $\zeta$, a cyclic character
+\begin{equation}
+\boxed{
+\chi_k^{\rm CS}:\Gamma\longrightarrow U(1),
+\qquad
+\chi_k^{\rm CS}(\zeta^n)=Z_k^n.
+}
+\end{equation}
+In particular,
+\begin{equation}
+\boxed{
+\chi_k^{\rm CS}(\zeta)=e^{-2\pi i k/6}.
+}
+\end{equation}
+No statement is made that this character equals the stabilizer action of a separately constructed three-dimensional prequantum line; that identification is addressed as a negative result in the level-selection paper.
+
+\section{Revised ITT Level-Selection Postulate}
+
+The standard Chern--Simons construction supplies the phase $Z_k$, but does not by itself supply a canonical identification of that phase with a fiber character of a three-dimensional line object. ITT therefore makes the following explicit theory-specific choice.
+
+\begin{postulate}[ITT Fundamental-Sector Phase Triviality]
+The fundamental quotient sector $L(6,1)$ is admitted by ITT at level $k$ only when its level-$k$ Chern--Simons phase is trivial:
+\begin{equation}
+\boxed{
+Z_k(L(6,1),\rho_1)=1.
+}
+\end{equation}
+\end{postulate}
+
+This postulate is stronger and more transparent than assuming an unconstructed equivariant line-bundle lift. It is an ITT-specific selection rule and is not claimed to follow from ordinary $SU(2)$ Chern--Simons theory.
+
+\section{Conditional Level Selection}
+
+Using the derived phase,
+\begin{equation}
+Z_k=e^{-2\pi i k/6},
+\end{equation}
+the phase-triviality postulate gives
+\begin{equation}
+e^{-2\pi i k/6}=1.
+\end{equation}
+Therefore
 \begin{equation}
 \boxed{k\in6\mathbb Z.}
 \end{equation}
-The minimal positive ITT-compatible level is consequently
+For positive integer level,
 \begin{equation}
 \boxed{k_{\min}=6.}
 \end{equation}
-
-The logical status is important:
+The logical chain is therefore
 \begin{equation}
-\text{ordinary Chern--Simons theory}
-\Rightarrow k\in\mathbb Z,
+\text{standard CS quantization }(k\in\mathbb Z)
+\;+
+\text{ITT phase-triviality postulate}
+\;\Longrightarrow\;
+k_{\min}=6.
 \end{equation}
-whereas
-\begin{equation}
-\text{ITT equivariant-descent postulate}
-\Rightarrow k\in6\mathbb Z.
-\end{equation}
-Thus $k=6$ is an ITT selection rule, not a universal theorem of ordinary $SU(2)$ Chern--Simons theory.
 
 \section{Independent Soliton Sector}
 
@@ -431,12 +448,7 @@ The number of generations is not used in the level-selection argument. ITT treat
 N_{\rm gen}=3
 \end{equation}
 as an independent dynamical hypothesis to be tested by a future soliton analysis.
-
-The objective is to construct an ITT energy functional
-\begin{equation}
-E_{\rm ITT}[n,A]
-\end{equation}
-for which the stable topological sectors satisfy
+The objective is to construct an ITT energy functional $E_{\rm ITT}[n,A]$ for which the stable topological sectors satisfy
 \begin{equation}
 Q_H=1,2,3,
 \end{equation}
@@ -453,15 +465,17 @@ The minimal ITT foundation is summarized by
 \Downarrow\\[4pt]
 \boxed{D_i\mathcal C_a^i=\mathcal G_a}\\[4pt]
 \Downarrow\\[4pt]
-\boxed{\Psi_k[A]=\mathcal N e^{\,ikS_{\rm CS}^{(0)}[A]/4\pi}}\\[4pt]
+\boxed{\Psi_k[A]=\mathcal N e^{\,ikS_{\rm CS}^{(0)}[A]/4\pi} }\\[4pt]
 \Downarrow\\[4pt]
 \boxed{Q_{\rm BPST}\to1,\qquad \mathrm{SF}=\mathrm{ind}_{\rm APS}=1}\\[4pt]
 \Downarrow\\[4pt]
 \boxed{L(6,1)=S^3/\mathbb Z_6,\qquad \mathrm{cs}(\rho_1)=-\frac16}\\[4pt]
 \Downarrow\\[4pt]
-\boxed{\chi_k(\zeta)=e^{-2\pi ik/6}\quad\text{(ITT equivariant-lift postulate)}}\\[4pt]
+\boxed{Z_k=e^{2\pi i k\,\mathrm{cs}(\rho_1)}=e^{-2\pi i k/6}}\\[4pt]
 \Downarrow\\[4pt]
-\boxed{\chi_k(\zeta)=1\Longrightarrow k\in6\mathbb Z}\\[4pt]
+\boxed{Z_k=1\quad\text{(ITT phase-triviality postulate)}}\\[4pt]
+\Downarrow\\[4pt]
+\boxed{k\in6\mathbb Z}\\[4pt]
 \Downarrow\\[4pt]
 \boxed{k_{\min}=6.}
 \end{array}
@@ -479,7 +493,6 @@ N_{\rm gen}=3.
 \section{Foundational Status and Open Problems}
 
 The present version deliberately does not claim completion of the full physical theory. The current status is:
-
 \begin{center}
 \begin{tabular}{lll}
 \toprule
@@ -491,31 +504,19 @@ APS spectral-flow framework & Established & Unit-index construction \\
 $k\in\mathbb Z$ & Established & Standard CS quantization \\
 $L(6,1)=S^3/\mathbb Z_6$ & Established & ITT quotient geometry \\
 $\mathrm{cs}(\rho_1)=-1/6$ & Derived/Convention-fixed & Level-selection input \\
-$\mathbb Z_6$ equivariant lift & Open & Paper 1 target \\
-$k_{\min}=6$ & Conditional & ITT descent consequence \\
+$Z_k=e^{-2\pi i k/6}$ & Derived & Differential-CS evaluation \\
+$\chi_k^{\rm CS}$ & Derived construction & Cyclic character \\
+3D equivariant fiber identification & Obstructed & Paper 1 negative result \\
+$Z_k=1$ & ITT Postulate & Level selection \\
+$k_{\min}=6$ & Conditional & Consequence of postulate \\
 $N_{\rm gen}=3$ & Open & Soliton paper target \\
 $\alpha$, masses, $g-2$, cosmology & Future & Prediction modules \\
 \bottomrule
 \end{tabular}
 \end{center}
 
-The foundational theory therefore makes the following restricted claim:
-\begin{equation}
-\boxed{
-\text{timeless canonical gauge structure}
-+
-\text{topological unit sector}
-+
-\mathbb Z_6\text{-equivariant descent}
-\Longrightarrow
-k_{\min}=6
-}
-\end{equation}
-where the final implication is conditional on the explicit construction of the ITT equivariant lift.
+The foundational theory therefore makes the restricted claim that standard differential Chern--Simons mathematics supplies the phase of the selected lens-space sector, while the phase-triviality condition is an explicit ITT selection choice. No claim is made that $k=6$ is a universal theorem of ordinary Chern--Simons theory.
 
-No Standard-Model parameter fitting and no phenomenological relation such as $3\times2$ is used in the foundational selection of the Chern--Simons level.
-
-\section*{References}
 \begin{thebibliography}{99}
 
 \bibitem{BPST1975}
@@ -548,6 +549,11 @@ D. S. Freed,
 \textit{Classical Chern--Simons Theory, Part 1},
 Adv. Math. \textbf{113}, 237--303 (1995).
 
-\end{thebibliography}
+\bibitem{CheegerSimons1985}
+J. Cheeger and J. Simons,
+\textit{Differential characters and geometric invariants},
+in \textit{Geometry and Topology}, Lecture Notes in Mathematics \textbf{1167}, 50--80,
+Springer (1985).
 
+\end{thebibliography}
 \end{document}

@@ -12,6 +12,7 @@ on:
 
 jobs:
   build_paper_0:
+    name: Build Paper 0 — Foundation
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -23,8 +24,27 @@ jobs:
           root_file: ITT_Foundation_v2.1.tex
           working_directory: papers/00_foundation/
 
-      - name: Upload PDF Artifact
+      - name: Upload Paper 0 PDF
         uses: actions/upload-artifact@v4
         with:
           name: ITT_Foundation_v2.1.pdf
           path: papers/00_foundation/ITT_Foundation_v2.1.pdf
+
+  build_paper_1:
+    name: Build Paper 1 — Level Selection
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v5
+
+      - name: Compile Level-Selection Paper
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: ITT_Paper1_LevelSelection_v0.1.tex
+          working_directory: papers/01_level_selection/
+
+      - name: Upload Paper 1 PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: ITT_Paper1_LevelSelection_v0.1.pdf
+          path: papers/01_level_selection/ITT_Paper1_LevelSelection_v0.1.pdf

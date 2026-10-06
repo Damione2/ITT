@@ -1,11 +1,41 @@
 # Changelog
 
+## [Unreleased] — 2026-10-06
+
+### Added
+- Added **Paper 1** research note at `papers/01_level_selection/ITT_Paper1_LevelSelection_v0.1.tex`.
+- Added Paper 1 documentation at `papers/01_level_selection/README.md`.
+
+### Scientific changes
+- Completed D-01b.1: the differential Chern--Simons phase
+  \[
+  Z_k(L(6,1),\rho_1)=e^{-2\pi i k/6}.
+  \]
+- Completed D-01b.2: the induced cyclic character
+  \[
+  \chi_k^{\rm CS}(\zeta)=e^{-2\pi i k/6}.
+  \]
+- Reclassified the original canonical three-dimensional equivariant-fiber identification as **N-01**, a negative result/obstruction for the presently specified data.
+- Replaced the earlier equivariant-lift postulate with the explicit ITT **fundamental-sector phase-triviality postulate**
+  \[
+  Z_k(L(6,1),\rho_1)=1.
+  \]
+- Updated the level-selection chain so that $k_{\min}=6$ is a conditional ITT consequence of A-03 together with ordinary integer CS quantization.
+- Updated Foundation to remove the obsolete claim that a three-dimensional prequantum line-bundle lift has already been specified.
+
+### Repository changes
+- Updated `CLAIM_STATUS.md` with the new `D` and `N` categories and split D-01 into completed sub-results plus the negative identification result.
+- Updated root `README.md` to reflect the actual Paper 1 research-note status.
+- Updated GitHub Actions to compile both Paper 0 and Paper 1.
+- Use `actions/checkout@v5`.
+
 ## [2.1.3] - 2026-10-05
+
 ### Fixed
 - Replaced non-portable operator macros with portable `\mathrm{...}` forms to support restricted math renderers/validators.
 - Synchronized `main` with the corrected Paper 0 foundation used in the `v2.1.2` tag.
 - Fixed the LaTeX CI path so `root_file` is resolved relative to `working_directory`.
-- Updated `actions/checkout` from `@v4` to `@v5`.
+- Updated `actions/checkout` from `@v4` to `@v5` in the intended repository state.
 
 ### Changed
 - Added explicit literature citations in Paper 0 for BPST, APS, ordinary Chern--Simons quantization, lens-space Chern--Simons invariants, and the prequantum line-bundle framework.
@@ -14,21 +44,23 @@
 - Synchronized `CITATION.cff` with repository release `2.1.3`.
 - Kept the $k_{\min}=6$ result explicitly conditional on the unfinished $\mathbb Z_6$-equivariant lift.
 
-### Scientific scope
-- No new phenomenological parameter fitting or new physical claim is introduced in this release.
-
 ## [2.1.2] - 2026-10-05
+
 ### Changed
-- Clarified Abstract in Paper 0: level selection $k_{\min}=6$ framed as a conditional descent mechanism awaiting explicit $\mathbb Z_6$-equivariant lift.
-- Formalized density weight/metric convention for Hamiltonian density $\mathcal{H}_{\rm ITT} = \frac{1}{2\sqrt{g}} g_{ij} \mathcal{C}_a^i \mathcal{C}^{ja}$.
+- Clarified Abstract in Paper 0: level selection $k_{\min}=6$ framed as a conditional descent mechanism.
+- Formalized density weight/metric convention for the Hamiltonian density.
 - Populated `predictions/prediction_manifest.json` with preregistered parameter-free targets.
 - Added Axiom category (`A`) to `CLAIM_STATUS.md`.
 
 ## [2.1.1] - 2026-10-04
+
 ### Fixed
 - Updated `CITATION.cff` schema and synchronized repository DOI metadata.
 
 ## [2.1.0] - 2026-10-04
+
 ### Added
 - Complete minimal foundational formulation (`papers/00_foundation/ITT_Foundation_v2.1.tex`).
 - Automated LaTeX build pipeline via GitHub Actions.
+- Preregistered prediction manifest.
+- Mathematical claim status matrix.
