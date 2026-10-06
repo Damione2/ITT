@@ -27,7 +27,7 @@
 \author{\textbf{Damyan Damyanov}\\
 \small\textit{Independent Researcher, Bulgaria}\\
 \small\href{mailto:damione1@gmail.com}{damione1@gmail.com}}
-\date{Version 2.1.4 --- October 2026}
+\date{Version 2.1.5 --- October 2026}
 
 \begin{document}
 \maketitle
@@ -35,7 +35,7 @@
 \begin{abstract}
 We present the minimal foundational formulation of Information-Topological Theory (ITT) as a timeless canonical gauge framework on a three-dimensional configuration space. The formulation separates standard mathematical results from ITT-specific postulates, completed intermediate derivations, negative mathematical results, and future dynamical predictions.
 
-The standard sector contains the $SU(2)$ gauge structure on $S^3$, the canonical ITT constraint, its formal Chern--Simons state, the unit BPST topological sector, the associated Atiyah--Patodi--Singer spectral-flow construction, ordinary integer Chern--Simons level quantization, and the convention-fixed rational Chern--Simons invariant of the fundamental flat sector of $L(6,1)=S^3/\mathbb Z_6$. The level-$k$ differential Chern--Simons evaluation of this sector gives the phase $\exp(2\pi i k\,\mathrm{cs}(\rho_1))=e^{-2\pi i k/6}$. A further analysis shows that the presently specified data do not canonically identify this phase with a stabilizer action on a hypothetical three-dimensional prequantum line fiber. ITT therefore formulates level selection as an explicit phase-triviality postulate rather than as an unproved equivariant-line-bundle theorem.
+The standard sector contains the $SU(2)$ gauge structure on $S^3$, the canonical ITT constraint, its formal Chern--Simons state, the unit BPST topological sector, the associated Atiyah--Patodi--Singer spectral-flow construction, and ordinary integer Chern--Simons level quantization. ITT further postulates a closed-wave ontology and a unit scale-ratio self-similarity condition $\ell/R=1$; elementary chord geometry then yields the sixfold regular cyclic closure $N=6$. The derived cyclic order is realized by the specified free diagonal $\mathbb Z_6$ action on $S^3$, giving the quotient $L(6,1)$ and its convention-fixed rational Chern--Simons invariant. The level-$k$ differential Chern--Simons evaluation of this sector gives the phase $\exp(2\pi i k\,\mathrm{cs}(\rho_1))=e^{-2\pi i k/6}$. A further analysis shows that the presently specified data do not canonically identify this phase with a stabilizer action on a hypothetical three-dimensional prequantum line fiber. ITT therefore formulates level selection as an explicit phase-triviality postulate rather than as an unproved equivariant-line-bundle theorem.
 
 Under that theory-specific selection postulate, $Z_k(L(6,1),\rho_1)=1$, one obtains $k\in6\mathbb Z$ and hence $k_{\min}=6$. No Standard-Model parameter fitting or generation-count argument is used in the foundational level selection.
 \end{abstract}
@@ -53,8 +53,8 @@ No preferred external physical time is postulated at the foundational level. A p
 The theory separates four logical levels:
 \begin{enumerate}[label=(\roman*)]
     \item \textbf{Standard mathematics:} gauge theory on $S^3$, BPST topology, APS spectral flow, ordinary Chern--Simons level quantization, lens-space topology, and rational Chern--Simons invariants.
-    \item \textbf{ITT defining structure:} the timeless canonical constraint and the phase-triviality requirement used for level selection.
-    \item \textbf{Completed intermediate derivations:} the differential Chern--Simons phase and its induced cyclic character associated with the selected fundamental lens-space sector.
+    \item \textbf{ITT defining structure:} the timeless canonical constraint, the closed-wave physical ontology, the unit scale-ratio self-similarity condition, and the phase-triviality requirement used for level selection.
+    \item \textbf{Completed intermediate derivations:} the sixfold regular cyclic closure $N=6$, the differential Chern--Simons phase, and its induced cyclic character associated with the resulting order-six quotient realization.
     \item \textbf{Open or future ITT results:} dynamical derivation of $N_{\rm gen}=3$, precision phenomenology, and any stronger physical interpretation of the selected level.
 \end{enumerate}
 
@@ -297,9 +297,82 @@ the normalized Chern--Simons amplitude is gauge invariant only when the level sa
 \end{equation}
 This is the standard Chern--Simons quantization condition\cite{Witten1989}. It does not select $k=6$.
 
+\section{Closed-Wave Ontology and Sixfold Structural Closure}
+
+The order of the cyclic quotient used below is not taken here as an unexplained numerical input. ITT introduces two explicit physical postulates and separates them from the geometry that follows.
+
+\begin{postulate}[ITT Closed-Wave Physical Ontology]
+A stable elementary physical excitation is represented by a globally phase-coherent closed field mode. For a closed orbit of length $L$, the field satisfies
+\begin{equation}
+\boxed{
+\Psi(s+L)=\Psi(s).
+}
+\end{equation}
+For a phase mode $\Psi(s)=A e^{iqs}$, closure implies
+\begin{equation}
+qL=2\pi n,\qquad n\in\mathbb Z.
+\end{equation}
+ITT takes the minimal non-trivial closed excitation to have fundamental winding
+\begin{equation}
+\boxed{n_{\min}=1.}
+\end{equation}
+\end{postulate}
+
+\begin{remark}
+The integer-winding consequence is standard mathematics once periodic single-valuedness is imposed. The specifically physical statement that stable elementary excitations are to be modeled by such globally closed modes is the ITT postulate.
+\end{remark}
+
+\begin{postulate}[ITT Unit Scale-Ratio Self-Similarity]
+For the elementary regular cyclic discretization of the fundamental closed mode, let $R$ denote the curvature radius of the circular phase orbit and let $\ell$ denote the straight chord joining adjacent phase points. ITT imposes the scale-free self-consistency condition
+\begin{equation}
+\boxed{
+\eta\equiv\frac{\ell}{R}=1.
+}
+\end{equation}
+This is a defining ITT geometric postulate, not a theorem of standard quantum theory or differential geometry.
+\end{postulate}
+
+\begin{theorem}[Sixfold structural closure]
+For a regular cyclic closure with integer $N\ge3$, the ITT unit scale-ratio postulate uniquely selects
+\begin{equation}
+\boxed{N=6.}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+For a regular $N$-fold subdivision of a circle of radius $R$, adjacent phase points subtend the central angle $2\pi/N$, so the chord length is
+\begin{equation}
+\ell_N
+=
+2R\sin\left(\frac{\pi}{N}\right).
+\end{equation}
+Imposing $\ell_N=R$ gives
+\begin{equation}
+2\sin\left(\frac{\pi}{N}\right)=1.
+\end{equation}
+For $N\ge3$, one has $0<\pi/N\le\pi/3$. In this interval the equation $\sin x=1/2$ has the unique solution $x=\pi/6$. Hence
+\begin{equation}
+\frac{\pi}{N}=\frac{\pi}{6},
+\end{equation}
+and therefore $N=6$.
+\end{proof}
+
+\begin{corollary}[Derived cyclic order]
+The elementary regular closure selected by A-05 has cyclic order six and therefore carries the abstract cyclic symmetry
+\begin{equation}
+\boxed{
+\mathbb Z_6=\langle\zeta\mid\zeta^6=1\rangle.
+}
+\end{equation}
+\end{corollary}
+
+\begin{remark}[Logical boundary]
+The theorem derives the integer order $6$ from A-05; it does not by itself prove uniqueness of a free $\mathbb Z_6$ action on $S^3$ and does not independently derive the lens-space parameter $q=1$. ITT realizes the derived cyclic order by the explicit free diagonal action on $S^3\subset\mathbb C^2$ used in the next section. Thus the number six is no longer an independent numerical input, while the concrete quotient realization remains part of the ITT geometric construction.
+\end{remark}
+
 \section{Lens-Space Sector}
 
-The ITT quotient geometry is defined by the free diagonal action
+The derived cyclic order $N=6$ is realized in the ITT quotient geometry by the free diagonal action
 \begin{equation}
 (z_1,z_2)
 \longmapsto
@@ -469,6 +542,12 @@ The minimal ITT foundation is summarized by
 \Downarrow\\[4pt]
 \boxed{Q_{\rm BPST}\to1,\qquad \mathrm{SF}=\mathrm{ind}_{\rm APS}=1}\\[4pt]
 \Downarrow\\[4pt]
+\boxed{\Psi(s+L)=\Psi(s),\qquad n_{\min}=1\quad\text{(ITT closed-wave postulate)}}\\[4pt]
+\Downarrow\\[4pt]
+\boxed{\ell/R=1\quad\text{(ITT self-similarity postulate)}}\\[4pt]
+\Downarrow\\[4pt]
+\boxed{N=6\quad\text{(sixfold structural closure)}}\\[4pt]
+\Downarrow\\[4pt]
 \boxed{L(6,1)=S^3/\mathbb Z_6,\qquad \mathrm{cs}(\rho_1)=-\frac16}\\[4pt]
 \Downarrow\\[4pt]
 \boxed{Z_k=e^{2\pi i k\,\mathrm{cs}(\rho_1)}=e^{-2\pi i k/6}}\\[4pt]
@@ -494,7 +573,8 @@ N_{\rm gen}=3.
 
 The present version deliberately does not claim completion of the full physical theory. The current status is:
 \begin{center}
-\begin{tabular}{lll}
+\small
+\begin{tabular}{p{0.31\textwidth}p{0.22\textwidth}p{0.37\textwidth}}
 \toprule
 Object & Status & Role \\
 \midrule
@@ -502,8 +582,11 @@ $SU(2)$ gauge geometry on $S^3$ & Established & Foundation \\
 BPST unit sector & Established & Topological input \\
 APS spectral-flow framework & Established & Unit-index construction \\
 $k\in\mathbb Z$ & Established & Standard CS quantization \\
-$L(6,1)=S^3/\mathbb Z_6$ & Established & ITT quotient geometry \\
-$\mathrm{cs}(\rho_1)=-1/6$ & Derived/Convention-fixed & Level-selection input \\
+Closed-wave ontology, $n_{\min}=1$ & ITT Postulate & Physical ontology \\
+$\ell/R=1$ & ITT Postulate & Geometric self-consistency \\
+$N=6$ & Derived/Conditional & Consequence of $\ell/R=1$ \\
+$L(6,1)=S^3/\mathbb Z_6$ & Constructed & Diagonal realization of derived order \\
+$\mathrm{cs}(\rho_1)=-1/6$ & Derived & Convention-fixed CS input \\
 $Z_k=e^{-2\pi i k/6}$ & Derived & Differential-CS evaluation \\
 $\chi_k^{\rm CS}$ & Derived construction & Cyclic character \\
 3D equivariant fiber identification & Obstructed & Paper 1 negative result \\
@@ -515,7 +598,7 @@ $\alpha$, masses, $g-2$, cosmology & Future & Prediction modules \\
 \end{tabular}
 \end{center}
 
-The foundational theory therefore makes the restricted claim that standard differential Chern--Simons mathematics supplies the phase of the selected lens-space sector, while the phase-triviality condition is an explicit ITT selection choice. No claim is made that $k=6$ is a universal theorem of ordinary Chern--Simons theory.
+The foundational theory therefore makes the restricted claim that the ITT postulate $\ell/R=1$ selects the cyclic order $N=6$ by elementary chord geometry; the diagonal $\mathbb Z_6$ action then provides the explicit quotient realization used by the theory. Standard differential Chern--Simons mathematics supplies the phase of that lens-space sector, while the phase-triviality condition is a separate ITT selection choice. No claim is made that either A-05 or $k=6$ is a universal theorem of ordinary quantum or Chern--Simons theory.
 
 \begin{thebibliography}{99}
 
