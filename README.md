@@ -4,9 +4,9 @@
 
 Information-Topological Theory (ITT) is formulated as a **timeless canonical gauge framework** on the gauge-orbit configuration space
 
-\[
-\mathcal C_{\rm ITT}=\mathcal A(S^3)/\mathcal G(S^3).
-\]
+```math
+\mathcal C_{\mathrm{ITT}}=\mathcal A(S^3)/\mathcal G(S^3).
+```
 
 The repository separates standard mathematics, ITT-specific physical postulates, completed derivations, negative mathematical results, and future physical targets.
 
@@ -31,13 +31,13 @@ The foundational manuscript contains:
 - the explicit ITT phase-triviality postulate used for level selection.
 
 The structural-closure result removes the **order six** as an independent numerical input: under A-05,
-\[
+```math
 \ell_N=2R\sin\left(\frac{\pi}{N}\right),\qquad \ell_N=R
-\]
+```
 has the unique regular cyclic solution
-\[
+```math
 N=6.
-\]
+```
 
 The theorem selects the cyclic order. The concrete diagonal action on $S^3$ is the ITT geometric realization of that order; the theorem alone is not claimed to derive a unique free action or the lens-space parameter $q=1$.
 
@@ -49,13 +49,13 @@ The theorem selects the cyclic order. The concrete diagonal action on $S^3$ is t
 2. the induced cyclic character relative to the chosen $\mathbb Z_6$ generator;
 3. the obstruction to canonically identifying that character with a three-dimensional equivariant prequantum-fiber action from the presently specified data;
 4. the ITT phase-triviality selection principle
-   \[
+```math
    Z_k(L(6,1),\rho_1)=1,
-   \]
+```
    which gives
-   \[
+```math
    k\in6\mathbb Z,\qquad k_{\min}=6.
-   \]
+```
 
 The value $k_{\min}=6$ remains an **ITT-specific conditional consequence**, not a universal theorem of ordinary $SU(2)$ Chern--Simons theory.
 
@@ -63,48 +63,48 @@ The value $k_{\min}=6$ remains an **ITT-specific conditional consequence**, not 
 
 The current ITT architecture is
 
-\[
+```math
 \text{closed coherent excitation (A-04)}
 \longrightarrow
 \text{regular cyclic closure}
-\]
+```
 
 together with
 
-\[
+```math
 \frac{\ell}{R}=1\quad\text{(A-05)}
 \longrightarrow
 N=6\quad\text{(D-03)}.
-\]
+```
 
 ITT then realizes the derived cyclic order by the free diagonal action
-\[
+```math
 (z_1,z_2)\mapsto
 \left(e^{2\pi i/6}z_1,e^{2\pi i/6}z_2\right)
-\]
+```
 on $S^3\subset\mathbb C^2$, giving
-\[
+```math
 L(6,1)=S^3/\mathbb Z_6.
-\]
+```
 
 For the fundamental flat sector,
-\[
+```math
 \mathrm{cs}(\rho_1)=-\frac16,\qquad
 Z_k=e^{-2\pi i k/6}.
-\]
+```
 
 With A-03,
-\[
+```math
 Z_k=1
 \quad\Longrightarrow\quad
 k\in6\mathbb Z
 \quad\Longrightarrow\quad
 k_{\min}=6.
-\]
+```
 
 ## Future papers
 
-- **Paper 2:** dynamical/soliton analysis of $N_{\rm gen}=3$.
+- **Paper 2:** dynamical/soliton analysis of $N_{\mathrm{gen}}=3$.
 - **Paper 3:** parameter-free fine-structure target.
 - Later papers address masses, magnetic moments, and cosmological quantities.
 
@@ -160,7 +160,7 @@ This repository does **not** present the following as results of standard mathem
 - the physical ontology A-04;
 - the unit scale-ratio postulate A-05;
 - the phase-triviality postulate A-03;
-- $N_{\rm gen}=3$;
+- $N_{\mathrm{gen}}=3$;
 - the heuristic product $3\times2$;
 - Standard-Model anomaly counting as a derivation of $k$;
 - a fractional ordinary $c_2$ number on $L(6,1)\times S^1$;

@@ -5,13 +5,13 @@
 ### Scientific changes
 - Added **A-04**, the ITT closed-wave physical postulate: stable elementary excitations are modeled as globally phase-coherent closed field modes with a non-trivial fundamental winding.
 - Added **A-05**, the ITT unit scale-ratio self-similarity postulate:
-  \[
+```math
   \frac{\ell}{R}=1.
-  \]
+```
 - Added **D-03**, the sixfold structural-closure derivation. For a regular $N$-fold cyclic closure,
-  \[
+```math
   \ell_N=2R\sin\left(\frac{\pi}{N}\right),
-  \]
+```
   so A-05 gives the unique integer solution $N=6$ for $N\ge3$.
 - Clarified that D-03 derives the cyclic **order** six, while the free diagonal $\mathbb Z_6$ action on $S^3$ is the explicit ITT geometric realization; the theorem alone does not claim uniqueness of the free action or independently derive the lens-space parameter $q=1$.
 - Updated the foundational logical chain so the order six is no longer treated as an unexplained numerical input.
@@ -30,18 +30,18 @@
 
 ### Scientific changes
 - Completed D-01b.1: the differential Chern--Simons phase
-  \[
+```math
   Z_k(L(6,1),\rho_1)=e^{-2\pi i k/6}.
-  \]
+```
 - Completed D-01b.2: the induced cyclic character
-  \[
-  \chi_k^{\rm CS}(\zeta)=e^{-2\pi i k/6}.
-  \]
+```math
+  \chi_k^{\mathrm{CS}}(\zeta)=e^{-2\pi i k/6}.
+```
 - Reclassified the original canonical three-dimensional equivariant-fiber identification as **N-01**, a negative result/obstruction for the presently specified data.
 - Replaced the earlier equivariant-lift postulate with the explicit ITT **fundamental-sector phase-triviality postulate**
-  \[
+```math
   Z_k(L(6,1),\rho_1)=1.
-  \]
+```
 - Updated the level-selection chain so that $k_{\min}=6$ is a conditional ITT consequence of A-03 together with ordinary integer CS quantization.
 - Updated Foundation to remove the obsolete claim that a three-dimensional prequantum line-bundle lift has already been specified.
 
