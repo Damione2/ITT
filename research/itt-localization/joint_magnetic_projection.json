@@ -1,0 +1,96 @@
+{
+  "normalization": {
+    "N_physical": 0.5,
+    "Q_physical": 0.30282212087175264,
+    "experimental_e_in_rationalized_units": 0.3028221207683449,
+    "note": "f=1 chosen only for cancelling dimensional factors; all constants and charge branch are inputs."
+  },
+  "formulas": {
+    "classical": "g_cl=2 Ebar |mubar|/(q_eff Nbar^2), using J_z=-m Nbar/gamma^2, m=1.",
+    "projection": "Assume j=1/2,k=-1/2,m_spin=+1/2 and pure body magnetic operator: <axis_z>=m_spin*k/[j(j+1)]=-1/3; g_body_projection=g_cl/3."
+  },
+  "rotor_orientation_check": {
+    "axis_expectation_plus": -0.33333333333333315,
+    "axis_expectation_minus": 0.33333333333333304,
+    "unpolarized_weight_max_error": 0.0,
+    "charge_kernel_errors": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "electron_comparison_g": 2.00231930436,
+  "rows": [
+    {
+      "stage": 0,
+      "grid": {
+        "L": 24,
+        "ncore": 28,
+        "nout": 20,
+        "order": 4
+      },
+      "g_classical": 5.906491147724698,
+      "conditional_body_projection_g": 1.9688303825748985,
+      "conditional_relative_difference_from_electron_g": -0.016725065633727887,
+      "conditional_anomaly": -0.015584808712550746,
+      "magnetic_moment_volume": -3.733365153292776,
+      "magnetic_moment_leading_far_dipole": -3.7238458935767986,
+      "leading_far_dipole_relative_difference": -0.0025497799773432916
+    },
+    {
+      "stage": 1,
+      "grid": {
+        "L": 32,
+        "ncore": 28,
+        "nout": 24,
+        "order": 4
+      },
+      "g_classical": 5.906596572307841,
+      "conditional_body_projection_g": 1.9688655241026125,
+      "conditional_relative_difference_from_electron_g": -0.016707515222243785,
+      "conditional_anomaly": -0.015567237948693746,
+      "magnetic_moment_volume": -3.733445454763065,
+      "magnetic_moment_leading_far_dipole": -3.7248053527475937,
+      "leading_far_dipole_relative_difference": -0.0023142435372796033
+    },
+    {
+      "stage": 2,
+      "grid": {
+        "L": 32,
+        "ncore": 28,
+        "nout": 24,
+        "order": 4
+      },
+      "g_classical": 5.906567961818107,
+      "conditional_body_projection_g": 1.9688559872727012,
+      "conditional_relative_difference_from_electron_g": -0.016712278113901746,
+      "conditional_anomaly": -0.015572006363649415,
+      "magnetic_moment_volume": -3.733427361507653,
+      "magnetic_moment_leading_far_dipole": -3.7247872968821056,
+      "leading_far_dipole_relative_difference": -0.002314244737858906
+    },
+    {
+      "stage": 3,
+      "grid": {
+        "L": 24,
+        "ncore": 36,
+        "nout": 20,
+        "order": 4
+      },
+      "g_classical": 5.904032734043568,
+      "conditional_body_projection_g": 1.9680109113478552,
+      "conditional_relative_difference_from_electron_g": -0.01713432664682346,
+      "conditional_anomaly": -0.01599454432607239,
+      "magnetic_moment_volume": -3.7322989351510008,
+      "magnetic_moment_leading_far_dipole": -3.7227724050132043,
+      "leading_far_dipole_relative_difference": -0.0025524563555386903
+    }
+  ],
+  "scope": [
+    "No derivation of fermionic quantization: j=1/2 sector and charge branch are assumptions.",
+    "Quantum rotational energy, profile backreaction, induced collective current and boosts not computed.",
+    "Projection result is only a body-current diagnostic; it is not the full quantum magnetic moment.",
+    "Unpolarized charge statement is for leading rigid orientation averaging, not a full relativistic F1.",
+    "Nearness to g=2 is not independent validation of prechosen parameters."
+  ]
+}

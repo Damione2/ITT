@@ -1,0 +1,159 @@
+{
+  "scope": "Stationary Hopf external magnetic energy response with re-solved Maxwell self-field; no collective rotation",
+  "conventions": "Physical uniform B along z has A_cov,phi=-B*r/2; j follows previous code convention",
+  "rows": [
+    {
+      "stage": 0,
+      "grid": {
+        "L": 24,
+        "ncore": 28,
+        "nout": 20,
+        "order": 4
+      },
+      "energy0": 334.22924909896795,
+      "body_moment_integrated": -3.7333651532927767,
+      "energy_slope_analytic": 3.733365153292777,
+      "energy_slope_finite_difference": 3.733365153095747,
+      "energy_slope_half_step": 3.7333651528115297,
+      "energy_curvature_frozen_polar": 0.36665721327664985,
+      "g_classical_from_energy": 5.906491146809282,
+      "conditional_projection_if_retained": 1.9688303822697606,
+      "samples": [
+        {
+          "B_model": -0.0001,
+          "energy": 334.22887576428593,
+          "moment_from_current": -3.7333284875714496,
+          "relative_Maxwell_residual": 8.989630441157569e-13
+        },
+        {
+          "B_model": -5e-05,
+          "energy": 334.22906243116864,
+          "moment_from_current": -3.7333468204321134,
+          "relative_Maxwell_residual": 9.49628069288948e-13
+        },
+        {
+          "B_model": 0.0,
+          "energy": 334.22924909896795,
+          "moment_from_current": -3.733365153292777,
+          "relative_Maxwell_residual": 9.595797438785667e-13
+        },
+        {
+          "B_model": 5e-05,
+          "energy": 334.2294357676839,
+          "moment_from_current": -3.733383486153441,
+          "relative_Maxwell_residual": 9.318218850677932e-13
+        },
+        {
+          "B_model": 0.0001,
+          "energy": 334.22962243731655,
+          "moment_from_current": -3.7334018190141047,
+          "relative_Maxwell_residual": 8.996436924559715e-13
+        }
+      ]
+    },
+    {
+      "stage": 1,
+      "grid": {
+        "L": 32,
+        "ncore": 28,
+        "nout": 24,
+        "order": 4
+      },
+      "energy0": 334.22802578068945,
+      "body_moment_integrated": -3.7334454547630656,
+      "energy_slope_analytic": 3.7334454547630647,
+      "energy_slope_finite_difference": 3.73344545494092,
+      "energy_slope_half_step": 3.73344545494092,
+      "energy_curvature_frozen_polar": 0.36667060608599944,
+      "g_classical_from_energy": 5.906596572026082,
+      "conditional_projection_if_retained": 1.968865524008694,
+      "samples": [
+        {
+          "B_model": -0.0001,
+          "energy": 334.2276524379773,
+          "moment_from_current": -3.733408787702456,
+          "relative_Maxwell_residual": 1.2347436788895203e-12
+        },
+        {
+          "B_model": -5e-05,
+          "energy": 334.227839108875,
+          "moment_from_current": -3.7334271212327605,
+          "relative_Maxwell_residual": 1.2333832993980904e-12
+        },
+        {
+          "B_model": 0.0,
+          "energy": 334.22802578068945,
+          "moment_from_current": -3.7334454547630647,
+          "relative_Maxwell_residual": 1.2144139992178882e-12
+        },
+        {
+          "B_model": 5e-05,
+          "energy": 334.2282124534205,
+          "moment_from_current": -3.733463788293369,
+          "relative_Maxwell_residual": 1.2446860705617398e-12
+        },
+        {
+          "B_model": 0.0001,
+          "energy": 334.2283991270683,
+          "moment_from_current": -3.7334821218236733,
+          "relative_Maxwell_residual": 1.230403621076672e-12
+        }
+      ]
+    },
+    {
+      "stage": 3,
+      "grid": {
+        "L": 24,
+        "ncore": 36,
+        "nout": 20,
+        "order": 4
+      },
+      "energy0": 334.18557607693333,
+      "body_moment_integrated": -3.732298935151001,
+      "energy_slope_analytic": 3.7322989351510025,
+      "energy_slope_finite_difference": 3.7322989354038327,
+      "energy_slope_half_step": 3.7322989351196156,
+      "energy_curvature_frozen_polar": 0.36622113609671914,
+      "g_classical_from_energy": 5.904032734443507,
+      "conditional_projection_if_retained": 1.968010911481169,
+      "samples": [
+        {
+          "B_model": -0.0001,
+          "energy": 334.1852028488709,
+          "moment_from_current": -3.732262313037393,
+          "relative_Maxwell_residual": 1.7224342196510838e-12
+        },
+        {
+          "B_model": -5e-05,
+          "energy": 334.18538946244433,
+          "moment_from_current": -3.7322806240941975,
+          "relative_Maxwell_residual": 1.7909020685998943e-12
+        },
+        {
+          "B_model": 0.0,
+          "energy": 334.18557607693333,
+          "moment_from_current": -3.7322989351510025,
+          "relative_Maxwell_residual": 1.7334828690869166e-12
+        },
+        {
+          "B_model": 5e-05,
+          "energy": 334.18576269233785,
+          "moment_from_current": -3.732317246207807,
+          "relative_Maxwell_residual": 1.7777447886481705e-12
+        },
+        {
+          "B_model": 0.0001,
+          "energy": 334.185949308658,
+          "moment_from_current": -3.7323355572646117,
+          "relative_Maxwell_residual": 1.760219730354942e-12
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Polar matter shape fixed; self-Maxwell re-solves. At a stationary profile its relaxation affects energy at second order, not the first derivative.",
+    "No new derivation of spin-half or factor 1/3; the latter is only a retained conditional benchmark.",
+    "External source/background energy excluded; remote self-field boundary remains approximate.",
+    "Energy derivative and current integral test numerical implementation, not empirical truth of the postulated action."
+  ]
+}

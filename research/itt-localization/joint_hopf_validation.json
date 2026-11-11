@@ -1,0 +1,194 @@
+{
+  "results": [
+    {
+      "stage": 2,
+      "summary": {
+        "E2": 123.51347419464258,
+        "E4": 153.69605033792357,
+        "scale_virial": 0.15520867788321968,
+        "phase_weak_max": 1.6652161871633098e-09,
+        "energy": 334.22802662884476,
+        "t": 0.12102767095027217,
+        "R": 1.1286561429232576,
+        "I": 172.17852208960687,
+        "omega": 0.5755939254262961,
+        "required_kappa": 0.33037158002288025,
+        "profile_kappa": 0.33037644564332436,
+        "profile_coulomb_eta": 0.02542730564740437,
+        "required_coulomb_eta": 0.025427803507086368,
+        "polar_gradient": 76.73736233411309,
+        "potential": 28.191894552827684,
+        "phase_magnetic": 200.77667724997642,
+        "charge_energy": 28.522092491927555,
+        "magnetic_energy": 0.3045150479469886,
+        "electric_energy": 0.3197105474996037,
+        "numerical_gauge_energy": 3.5826746078578066e-09,
+        "gauge_reg": 1e-14,
+        "T2": 12.705645648722157,
+        "T4": 15.49673629570579,
+        "charge_rms": 2.3878433614278074,
+        "raw_magnetic_moment": -3.7334273615076548,
+        "gauss_residual": 2.4845930061978863e-12,
+        "meridional_Maxwell_residual": 9.173558235337706e-11,
+        "azimuthal_Maxwell_residual": 1.2422290009162464e-12,
+        "charge_flux_relative_error": 4.96269692007445e-13,
+        "max_gradient": 1.09729868074121e-05,
+        "gradient_norm": 7.739916008350045e-05,
+        "max_H": 1.7085162698161533
+      },
+      "tail_check": {
+        "full_linear_tail_comparison": {
+          "log_amplitude_ratio_slope": -4.0158934752926705e-05,
+          "amplitude_ratio_max_over_min": 1.0108522524785737,
+          "reference": "Whittaker W_{-eta,3/2}(2 kappa r)/r, axial l=1 Coulomb-Yukawa tail."
+        },
+        "fit_range": [
+          8.0,
+          17.0
+        ],
+        "fitted_effective_exponential_rate": 0.34681354162408073,
+        "required_asymptotic_rate": 0.33037158002288025,
+        "eta": 0.025427803507086368,
+        "boundary_matter_amplitude": 9.27568380537794e-06,
+        "warning": "Finite-radius fit includes subleading angular multipoles and boundary errors, not an exact asymptotic measurement."
+      },
+      "charge_diagnostics": {
+        "M_times_charge_rms": 4.026461268595461,
+        "conditional_charge_rms_m_if_mass_fitted_to_electron": 1.5548553338371803e-12,
+        "static_density_F_at_p_over_M": {
+          "0.01": 0.9997298571697721,
+          "0.1": 0.9735957149817597,
+          "0.5": 0.5546624799009471,
+          "1.0": 0.10172063244191111
+        },
+        "caveat": "Static orientation-averaged density Fourier transform; no quantum relativistic F1/F2 calculation. Electron mass used only for a conditional scale calibration."
+      }
+    },
+    {
+      "stage": 3,
+      "summary": {
+        "E2": 123.4989740060768,
+        "E4": 153.6790620407389,
+        "scale_virial": 0.08915500984035718,
+        "phase_weak_max": 2.764027895452159e-09,
+        "energy": 334.18557607693333,
+        "t": 0.12068959696383003,
+        "R": 1.1282746381337532,
+        "I": 172.1260158702333,
+        "omega": 0.5757695076052348,
+        "required_kappa": 0.3300654813616417,
+        "profile_kappa": 0.33037158002287964,
+        "profile_coulomb_eta": 0.025427803507086434,
+        "required_coulomb_eta": 0.02545914876227111,
+        "polar_gradient": 76.7477711088627,
+        "potential": 28.17193714269238,
+        "phase_magnetic": 200.73507480530682,
+        "charge_energy": 28.530793020071446,
+        "magnetic_energy": 0.30480986094837603,
+        "electric_energy": 0.3198424383803383,
+        "numerical_gauge_energy": 6.405123094897126e-09,
+        "gauge_reg": 1e-14,
+        "T2": 12.705482751277431,
+        "T4": 15.505467830413686,
+        "charge_rms": 2.3871390686310896,
+        "raw_magnetic_moment": -3.732298935151001,
+        "gauss_residual": 3.559203197690407e-12,
+        "meridional_Maxwell_residual": 1.5162279795716762e-10,
+        "azimuthal_Maxwell_residual": 1.7334850344923524e-12,
+        "charge_flux_relative_error": 5.775380174100064e-13,
+        "max_gradient": 2.8780503706906093e-05,
+        "gradient_norm": 0.000145860483906754,
+        "max_H": 1.6375991045371803
+      },
+      "tail_check": {
+        "full_linear_tail_comparison": {
+          "log_amplitude_ratio_slope": -0.0010699300761232015,
+          "amplitude_ratio_max_over_min": 1.0095052088972098,
+          "reference": "Whittaker W_{-eta,3/2}(2 kappa r)/r, axial l=1 Coulomb-Yukawa tail."
+        },
+        "fit_range": [
+          8.0,
+          15.600000000000001
+        ],
+        "fitted_effective_exponential_rate": 0.3490755380374744,
+        "required_asymptotic_rate": 0.3300654813616417,
+        "eta": 0.02545914876227111,
+        "boundary_matter_amplitude": 0.0001758284218209726,
+        "warning": "Finite-radius fit includes subleading angular multipoles and boundary errors, not an exact asymptotic measurement."
+      },
+      "charge_diagnostics": {
+        "M_times_charge_rms": 4.02476241352461,
+        "conditional_charge_rms_m_if_mass_fitted_to_electron": 1.554199305207542e-12,
+        "static_density_F_at_p_over_M": {
+          "0.01": 0.99973008524597,
+          "0.1": 0.9736191712415697,
+          "0.5": 0.5550483242659572,
+          "1.0": 0.10211900148859812
+        },
+        "caveat": "Static orientation-averaged density Fourier transform; no quantum relativistic F1/F2 calculation. Electron mass used only for a conditional scale calibration."
+      },
+      "four_smooth_polar_variations": [
+        {
+          "first_analytic": 0.0006584907448070781,
+          "checks": [
+            {
+              "step": 0.001,
+              "first_fd": 0.0006662692157988204,
+              "second_fd": 231.81338087852055
+            },
+            {
+              "step": 0.0005,
+              "first_fd": 0.0006604361715289997,
+              "second_fd": 231.81333472166443
+            }
+          ]
+        },
+        {
+          "first_analytic": 0.00019682994679341036,
+          "checks": [
+            {
+              "step": 0.001,
+              "first_fd": 0.0001908078388623835,
+              "second_fd": 46.34212120890879
+            },
+            {
+              "step": 0.0005,
+              "first_fd": 0.00019533098338797572,
+              "second_fd": 46.34215542864695
+            }
+          ]
+        },
+        {
+          "first_analytic": 4.356037364872139e-11,
+          "checks": [
+            {
+              "step": 0.001,
+              "first_fd": -6.821210263296962e-10,
+              "second_fd": 43.06662151520868
+            },
+            {
+              "step": 0.0005,
+              "first_fd": -4.092726157978177e-09,
+              "second_fd": 43.06659002395463
+            }
+          ]
+        },
+        {
+          "first_analytic": 0.0005731811822981222,
+          "checks": [
+            {
+              "step": 0.001,
+              "first_fd": 0.0005726875826894684,
+              "second_fd": 180.9269127193147
+            },
+            {
+              "step": 0.0005,
+              "first_fd": 0.0005730544785365055,
+              "second_fd": 180.92690038429282
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

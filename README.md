@@ -124,6 +124,8 @@ The taxonomy is:
 
 The numerical manifest remains at [`predictions/prediction_manifest.json`](predictions/prediction_manifest.json).
 
+Selected exploratory localization calculations, including mathematical obstructions, a stationary numerical control, and vacuum-response tests, are archived in [`research/itt-localization/`](research/itt-localization/README.md). They are working research notes with their own assumptions and do not change the claim status of the foundational papers.
+
 ## Repository structure
 
 ```text

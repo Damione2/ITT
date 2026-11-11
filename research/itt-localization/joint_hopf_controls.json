@@ -1,0 +1,229 @@
+{
+  "stages": [
+    {
+      "grid": {
+        "L": 24,
+        "ncore": 28,
+        "nout": 20,
+        "order": 4
+      },
+      "variables": 4561,
+      "initial_energy": 334.22924913312943,
+      "final": {
+        "E2": 123.51350558912712,
+        "E4": 153.69771223105258,
+        "scale_virial": 0.15029451085572743,
+        "phase_weak_max": 1.689542838967384e-08,
+        "energy": 334.22924913312943,
+        "t": 0.12102082132924397,
+        "R": 1.1286484120828841,
+        "I": 172.17561647650246,
+        "omega": 0.5756036390738309,
+        "required_kappa": 0.3303546557253731,
+        "profile_kappa": 0.33035588868541277,
+        "profile_coulomb_eta": 0.025429409158496806,
+        "required_coulomb_eta": 0.025429535329305863,
+        "polar_gradient": 76.73776397929453,
+        "potential": 28.190965442230397,
+        "phase_magnetic": 200.77794588458778,
+        "charge_energy": 28.52257382701673,
+        "magnetic_energy": 0.30449200603502896,
+        "electric_energy": 0.3196973583320666,
+        "numerical_gauge_energy": 3.7662895956828164e-08,
+        "gauge_reg": 1e-13,
+        "T2": 12.705664670429124,
+        "T4": 15.497211798255542,
+        "charge_rms": 2.3878640424620903,
+        "raw_magnetic_moment": -3.733365153292776,
+        "gauss_residual": 1.8904023859392288e-12,
+        "meridional_Maxwell_residual": 9.174897930533536e-10,
+        "azimuthal_Maxwell_residual": 9.190360135586323e-13,
+        "charge_flux_relative_error": 3.574918139293004e-14,
+        "max_gradient": 2.452349679137156e-05,
+        "gradient_norm": 0.00010452055934878476,
+        "max_H": 1.652845394990723
+      },
+      "iterations": 0,
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "gradient_check": [
+        -3.105844754094804e-06,
+        -3.180389285262208e-06
+      ],
+      "scale_gradient_check": [
+        -2.452349679137156e-05,
+        -2.434887846902711e-05
+      ],
+      "calls": 6
+    },
+    {
+      "grid": {
+        "L": 32,
+        "ncore": 28,
+        "nout": 24,
+        "order": 4
+      },
+      "variables": 5357,
+      "initial_energy": 334.22810632572134,
+      "final": {
+        "E2": 123.51342239765901,
+        "E4": 153.69605026072975,
+        "scale_virial": 0.15583093376696827,
+        "phase_weak_max": 1.688926620779796e-08,
+        "energy": 334.228025812555,
+        "t": 0.12102767095027217,
+        "R": 1.1286561429232576,
+        "I": 172.17935748839062,
+        "omega": 0.5755911326962485,
+        "required_kappa": 0.33037644564332436,
+        "profile_kappa": 0.3303546557253731,
+        "profile_coulomb_eta": 0.025429535329305863,
+        "required_coulomb_eta": 0.02542730564740437,
+        "polar_gradient": 76.73728522437503,
+        "potential": 28.19208386833837,
+        "phase_magnetic": 200.776702614546,
+        "charge_energy": 28.521954105295585,
+        "magnetic_energy": 0.30451514531274637,
+        "electric_energy": 0.3197086879400371,
+        "numerical_gauge_energy": 3.5222259924100335e-08,
+        "gauge_reg": 1e-13,
+        "T2": 12.705661778784531,
+        "T4": 15.49658363857102,
+        "charge_rms": 2.387879364632454,
+        "raw_magnetic_moment": -3.733445454763065,
+        "gauss_residual": 2.604364044395493e-12,
+        "meridional_Maxwell_residual": 9.174748850064382e-10,
+        "azimuthal_Maxwell_residual": 1.2139674192531906e-12,
+        "charge_flux_relative_error": 4.911626660941693e-13,
+        "max_gradient": 8.44845046587942e-06,
+        "gradient_norm": 7.556235424760498e-05,
+        "max_H": 1.708516269816151
+      },
+      "iterations": 18,
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "gradient_check": [
+        -1.4139073539274416e-06,
+        -1.5035084288683718e-06
+      ],
+      "scale_gradient_check": [
+        0.00020607454472748644,
+        0.0002060829729089164
+      ],
+      "calls": 26
+    },
+    {
+      "grid": {
+        "L": 32,
+        "ncore": 28,
+        "nout": 24,
+        "order": 4
+      },
+      "variables": 5357,
+      "initial_energy": 334.22802662884493,
+      "final": {
+        "E2": 123.51347419464255,
+        "E4": 153.69605033792362,
+        "scale_virial": 0.15520867788263382,
+        "phase_weak_max": 1.6652152434737388e-09,
+        "energy": 334.22802662884493,
+        "t": 0.12102767095027217,
+        "R": 1.1286561429232576,
+        "I": 172.1785220896068,
+        "omega": 0.5755939254262964,
+        "required_kappa": 0.33037158002287964,
+        "profile_kappa": 0.33037644564332436,
+        "profile_coulomb_eta": 0.02542730564740437,
+        "required_coulomb_eta": 0.025427803507086434,
+        "polar_gradient": 76.73736233411309,
+        "potential": 28.191894552827677,
+        "phase_magnetic": 200.7766772499766,
+        "charge_energy": 28.52209249192757,
+        "magnetic_energy": 0.3045150479474109,
+        "electric_energy": 0.31971054749960515,
+        "numerical_gauge_energy": 3.582673819639574e-09,
+        "gauge_reg": 1e-14,
+        "T2": 12.705645648722168,
+        "T4": 15.496736295705807,
+        "charge_rms": 2.3878433614278074,
+        "raw_magnetic_moment": -3.733427361507653,
+        "gauss_residual": 2.461824747391518e-12,
+        "meridional_Maxwell_residual": 9.179172212635358e-11,
+        "azimuthal_Maxwell_residual": 1.2431621363928894e-12,
+        "charge_flux_relative_error": 4.9649173661237e-13,
+        "max_gradient": 1.0972988737055767e-05,
+        "gradient_norm": 7.739916028389623e-05,
+        "max_H": 1.708516269816152
+      },
+      "iterations": 0,
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "gradient_check": [
+        -4.4724845126886756e-07,
+        -1.5631940186722204e-07
+      ],
+      "scale_gradient_check": [
+        -1.0972988737055767e-05,
+        -1.1084466677857561e-05
+      ],
+      "calls": 6
+    },
+    {
+      "grid": {
+        "L": 24,
+        "ncore": 36,
+        "nout": 20,
+        "order": 4
+      },
+      "variables": 6217,
+      "initial_energy": 334.1944198125682,
+      "final": {
+        "E2": 123.49897400607686,
+        "E4": 153.67906204073884,
+        "scale_virial": 0.08915500984219804,
+        "phase_weak_max": 2.7640200128686843e-09,
+        "energy": 334.185576076934,
+        "t": 0.12068959696383003,
+        "R": 1.1282746381337532,
+        "I": 172.12601587023326,
+        "omega": 0.5757695076052349,
+        "required_kappa": 0.33006548136164154,
+        "profile_kappa": 0.33037158002287964,
+        "profile_coulomb_eta": 0.025427803507086434,
+        "required_coulomb_eta": 0.02545914876227113,
+        "polar_gradient": 76.74777110886268,
+        "potential": 28.171937142692368,
+        "phase_magnetic": 200.73507480530753,
+        "charge_energy": 28.53079302007145,
+        "magnetic_energy": 0.3048098609466079,
+        "electric_energy": 0.3198424383803342,
+        "numerical_gauge_energy": 6.405122665143709e-09,
+        "gauge_reg": 1e-14,
+        "T2": 12.705482751277431,
+        "T4": 15.50546783041369,
+        "charge_rms": 2.3871390686310896,
+        "raw_magnetic_moment": -3.7322989351510008,
+        "gauss_residual": 3.4979671952648647e-12,
+        "meridional_Maxwell_residual": 1.5165341038986494e-10,
+        "azimuthal_Maxwell_residual": 1.7878170872294844e-12,
+        "charge_flux_relative_error": 5.776490397124689e-13,
+        "max_gradient": 2.878050370647022e-05,
+        "gradient_norm": 0.00014586048363587382,
+        "max_H": 1.6375991045371803
+      },
+      "iterations": 24,
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "gradient_check": [
+        -0.0008681777120633731,
+        -0.0008686697583470958
+      ],
+      "scale_gradient_check": [
+        -0.002565460811814031,
+        -0.002565508339102962
+      ],
+      "calls": 32
+    }
+  ],
+  "seconds": 21.295434168000156
+}
