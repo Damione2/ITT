@@ -13,6 +13,7 @@
 | Can a vacuum minimum supply the missing restoring force? | A soft Gaussian vacuum mode lowers the Hopf bending energy when relaxed; a separate two-stiffness connection model can leave a positive `1/R` cost. Neither is derived from quantum gravity. [Calculation](VACUUM_RESPONSE_HOPF_SCALE_CHECK.md), [check](check_vacuum_response_hopf.py), [gravity scale test](QUANTUM_GRAVITY_VACUUM_STIFFNESS_CHECK.md). |
 | Does threefold internal twist explain the electron? | Fixed threefold framing can select a trial radius, while planar three-lobe deformation raises bending energy; threefold shape, charge, and spin do not follow automatically. [Calculation](THREEFOLD_FRAMED_RING_CHECK.md), [check](check_threefold_elastic_ring.py). |
 | Can a closed spring select both ring size and core thickness? | A conditional flux plus positive core-energy model has a two-scale minimum, provided its coefficients and conserved flux are independently justified. It has not yet produced electron observables. [Calculation](TOROIDAL_SPRING_TWO_SCALE_CHECK.md). |
+| Does known gravity materially change that two-scale minimum? | In a weak-field softened-ring check it draws both sizes slightly inward, with an estimated relative effect near `10⁻⁴⁵` at the electron Compton benchmark. A new geometric stiffness would require its own action. [Calculation](TOROIDAL_SPRING_GRAVITY_BACKREACTION_CHECK.md), [check](check_toroidal_spring_gravity.py). |
 
 The [literature map](GEOMETRIC_UNIFICATION_LITERATURE_MAP.md) links the verified primary sources relevant to the `SU(2) → S²+U(1) → Hopf` route. The physical bridge from the foundational gauge theory to the gauged soliton action remains open.
 
@@ -24,6 +25,7 @@ The scripts were checked with Python 3.12.14, NumPy 2.3.5, and SciPy 1.17.0. Fro
 python check_su2_hopf_reduction.py
 python check_threefold_elastic_ring.py
 python check_vacuum_response_hopf.py
+python check_toroidal_spring_gravity.py
 python check_joint_magnetic_projection.py
 python validate_joint_hopf.py
 python check_hopf_static_zeeman.py
